@@ -1,0 +1,96 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.0 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nyt/global//global/global}
+    \entry{cengel2015}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=79f385d6d0c865582b06bd4aa78febd4}{%
+           family={Çengel},
+           familyi={Ç\bibinitperiod},
+           given={Y\bibnamedelima A},
+           giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=c5bafb9b29c12393bb14774fd54282df}{%
+           family={Ghajar},
+           familyi={G\bibinitperiod},
+           given={A\bibnamedelima J},
+           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {McGraw-Hill}%
+      }
+      \strng{namehash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \strng{fullhash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \strng{bibnamehash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \strng{authorbibnamehash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \strng{authornamehash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \strng{authorfullhash}{bfffa6d8d504261450f4262fca9b5a7f}
+      \field{sortinit}{Ç}
+      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{5}
+      \field{title}{Heat and Mass Transfer}
+      \field{year}{2015}
+    \endentry
+    \entry{forster1955}{article}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=437484b3a88e005a992721d3e84c137f}{%
+           family={Forster},
+           familyi={F\bibinitperiod},
+           given={K},
+           giveni={K\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=0b7cd9e7c50d28940c2ad925d433c7af}{%
+           family={Zuber},
+           familyi={Z\bibinitperiod},
+           given={N},
+           giveni={N\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{d53452d0512be87d598b2fdb07935787}
+      \strng{fullhash}{d53452d0512be87d598b2fdb07935787}
+      \strng{bibnamehash}{d53452d0512be87d598b2fdb07935787}
+      \strng{authorbibnamehash}{d53452d0512be87d598b2fdb07935787}
+      \strng{authornamehash}{d53452d0512be87d598b2fdb07935787}
+      \strng{authorfullhash}{d53452d0512be87d598b2fdb07935787}
+      \field{sortinit}{F}
+      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIChE Jl}
+      \field{title}{Dynamics of vapour bubbles and boiling heat-transfer}
+      \field{volume}{1}
+      \field{year}{1955}
+      \field{pages}{531}
+      \range{pages}{1}
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
