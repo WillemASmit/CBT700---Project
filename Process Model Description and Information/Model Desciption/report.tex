@@ -13,7 +13,7 @@
 \usepackage{amssymb}
 \usepackage{siunitx}
 \addbibresource{report.bib}
-\title{Project Model}
+\title{Project Process and  Model Description}
 \subject{CBT 700}
 \date{\today}
 
@@ -28,21 +28,27 @@
 
 
 \begin{document}
-
+\maketitle
 
 \section{System Diagram}
 
-The Process Floe Diagram of the system, with all the relevant inputs, outputs and disturbances are displayed in Figure~\ref{fig:processpfd}.
+The Process Flow Diagram of the system, with all the relevant inputs, outputs and disturbances are displayed in Figure~\ref{fig:PFD}.
 
 \begin{figure}[tbph]
 	\centering
-	\label{fig:processpfd}
 	\includegraphics[width=0.9\linewidth]{../Process_PFD}
 	\caption{Process flow diagram of the system}
+	\label{fig:PFD}
 \end{figure}
 
 \newpage
 \section{System Description}
+
+The system involves the separation of water and ethanol (in a solution), with the aim of producing an ethanol product that can be used as an alternative fuel source.
+
+The distillation column studied is a 19 tray, 12 inch diameter column. The column has variable feed and side stream draw off locations. The side stream flow is varied to control the composition of the stream. The distillate vapour draw off stream is fully condensed, and then separated into the reflux and product streams. The product stream is set to control the level in the condenser, while the reflux stream controls the composition of the distillate product. A kettle re-boiler is used to add energy to the column. Stream is the main utility. The amount re-boiled bottoms product is controlled by varying the steam supplied to the re-boiler. The feed temperature and flow rate can be controlled to simulated disturbances on the system. These variables are strictly defined as disturbances.
+
+The compositions are measured/determined through various on-line sensors (densitrometry and refractometry).    
 
 \newpage
 \section{System Variables}
@@ -80,6 +86,25 @@ The Process Floe Diagram of the system, with all the relevant inputs, outputs an
 
 \newpage
 \section{System Model}
+
+The model was determined by conducting pulse testing on the system. In most case a first order plus dead time model gave a sufficiently accurate fit to experimental data (based on the sum of the squared error method). In some cases, a second order system with first order lag and dead time, was used to accurately describe the impulse response. The fitting curves of two pulse tests are displayed in Figure~\ref{fig:test1} and Figure~\ref{fig:test2}.
+
+\begin{figure}[htbp]
+	\centering
+	\begin{minipage}{.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figures/Pulse_test_1}
+		\captionof{figure}{Overhead composition response to a pulse of 15 minutes duration in the reflux rate.}
+		\label{fig:test1}
+	\end{minipage}%
+	\hfill
+	\begin{minipage}{.48\textwidth}
+		\centering
+		\includegraphics[width=\linewidth]{Figures/Pulse_test_2}
+		\captionof{figure}{Side stream composition response to a pulse of 15 minutes duration in feed temperature.}
+		\label{fig:test2}
+	\end{minipage}
+\end{figure}
 
 The model takes the form of a commonly employed linear model for a MIMO system,
 
