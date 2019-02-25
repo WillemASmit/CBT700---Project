@@ -8,7 +8,7 @@ from __future__ import division
 from __future__ import print_function
 import numpy  # do not abbreviate this module as np in utils.py
 import scipy
-import sympy  # do not abbreviate this module as sp in utils.py
+#import sympy  # do not abbreviate this module as sp in utils.py
 from scipy import optimize, signal
 import scipy.linalg as sc_linalg
 from functools import reduce
@@ -282,6 +282,7 @@ class tf(object):
         for k in range(other-1):
             r = r * self
         return r
+
 # TODO: Concatenate tf objects into MIMO structure
 
 
@@ -519,11 +520,12 @@ class mimotf(object):
             return result
 
 
-def scaling(G_hat, e, u, input_type='symbolic', Gd_hat=None, d=None):
+def scaling(G_hat, e, u, Gd_hat=None, d=None):
     """
-    Receives symbolic matrix of plant and disturbance transfer functions
-    as well as array of maximum deviations, scales plant variables according
-    to eq () and ()
+    Receives matrix of mimotf objects describing the process
+    and disturbance transfer functions as well as array of maximum deviations, 
+    scales plant variables according to eq 1.14 in "Multivariable Feedback 
+    Control" by S. Skogestad.
 
     Parameters
     -----------
@@ -545,9 +547,8 @@ def scaling(G_hat, e, u, input_type='symbolic', Gd_hat=None, d=None):
 
     Example
     -------
-    >>> s = sympy.Symbol("s")
 
-    >>> G_hat = sympy.Matrix([[1/(s + 2), s/(s**2 - 1)],
+    >>> G_hat = mimotf([[1/(s + 2), s/(s**2 - 1)],
     ...                       [5*s/(s - 1), 1/(s + 5)]])
 
     >>> e = numpy.array([1,2])
@@ -567,59 +568,43 @@ def scaling(G_hat, e, u, input_type='symbolic', Gd_hat=None, d=None):
     if Gd_hat is not None and d is not None:
         Dd = numpy.diag(d)
 
-    if input_type == 'symbolic':
-        G_scaled = De_inv*(G_hat)*(Du)
-        if Gd_hat is not None and d is not None:
-            Dd = numpy.diag(d)
-            Gd_scaled = De_inv*(Gd_hat)*(Dd)
-            if G_hat.shape == (1, 1):
-                return G_scaled[0, 0], Gd_scaled[0, 0]
-            else:
-                return G_scaled, Gd_scaled
+
+    De_inv_utils = [[] for r in range(De_inv.shape[0])]
+    Du_utils = [[] for r in range(Du.shape[0])]
+
+    for r in range(De_inv.shape[0]):
+        for c in range(De_inv.shape[1]):
+            De_inv_utils[r].append(tf([De_inv[r, c]]))
+    for r in range(Du.shape[0]):
+        for c in range(Du.shape[1]):
+            Du_utils[r].append(tf([Du[r, c]]))
+
+    De_inv_mimo = mimotf(De_inv_utils)
+    Du_mimo = mimotf(Du_utils)
+    G_scaled = De_inv_mimo*(G_hat)*(Du_mimo)
+
+    if Gd_hat is not None and d is not None:
+        Dd_utils = [[] for r in range(Dd.shape[0])]
+        for r in range(Dd.shape[0]):
+            for c in range(Dd.shape[1]):
+                Dd_utils[r].append(tf([Dd[r, c]]))
+        Dd_mimo = mimotf(Dd_utils)
+        Gd_scaled = De_inv_mimo*(Gd_hat)*(Dd_mimo)
+        if G_hat.shape == (1, 1):
+            return G_scaled[0, 0], Gd_scaled[0, 0]
         else:
-            if G_hat.shape == (1, 1):
-                return G_scaled[0, 0]
-            else:
-                return G_scaled
-
-    elif input_type == 'mimotf':
-        De_inv_utils = [[] for r in range(De_inv.shape[0])]
-        Du_utils = [[] for r in range(Du.shape[0])]
-
-        for r in range(De_inv.shape[0]):
-            for c in range(De_inv.shape[1]):
-                De_inv_utils[r].append(tf([De_inv[r, c]]))
-        for r in range(Du.shape[0]):
-            for c in range(Du.shape[1]):
-                Du_utils[r].append(tf([Du[r, c]]))
-
-        De_inv_mimo = mimotf(De_inv_utils)
-        Du_mimo = mimotf(Du_utils)
-        G_scaled = De_inv_mimo*(G_hat)*(Du_mimo)
-
-        if Gd_hat is not None and d is not None:
-            Dd_utils = [[] for r in range(Dd.shape[0])]
-            for r in range(Dd.shape[0]):
-                for c in range(Dd.shape[1]):
-                    Dd_utils[r].append(tf([Dd[r, c]]))
-            Dd_mimo = mimotf(Dd_utils)
-            Gd_scaled = De_inv_mimo*(Gd_hat)*(Dd_mimo)
-            if G_hat.shape == (1, 1):
-                return G_scaled[0, 0], Gd_scaled[0, 0]
-            else:
-                return G_scaled, Gd_scaled
-        else:
-            if G_hat.shape == (1, 1):
-                return G_scaled[0, 0]
-            else:
-                return G_scaled
+            return G_scaled, Gd_scaled
     else:
-        raise ValueError('No input type specified')
+        if G_hat.shape == (1, 1):
+            return G_scaled[0, 0]
+        else:
+            return G_scaled
 
 
 def tf_step(G, t_end=10, initial_val=0, points=1000,
             constraint=None, Y=None, method='numeric'):
     """
+    Wian
     Validate the step response data of a transfer function by considering dead
     time and constraints. A unit step response is generated.
 
@@ -686,7 +671,7 @@ def tf_step(G, t_end=10, initial_val=0, points=1000,
             processdata2 = []
             bconst = False
             u = 1
-
+            
             for t in timedata:
                 dxdt1 = A1*x1 + B1*u
                 y1 = C1*x1 + D1*u
@@ -698,6 +683,7 @@ def tf_step(G, t_end=10, initial_val=0, points=1000,
                         bconst = True
                         # TODO : incorrect, find the correct switch condition
                         u = 0
+                        
                     dxdt2 = A2*x2 + B2*u
                     y2 = C2*x2 + D2*u
                     x2 = x2 + dxdt2 * dt
@@ -709,9 +695,14 @@ def tf_step(G, t_end=10, initial_val=0, points=1000,
                 processdata = [processdata1, processdata2]
             else:
                 processdata = processdata1
+                
         elif method == 'analytic':
             # TODO: calculate intercept of step and constraint line
-            timedata, processdata = [0, 0]
+            if constraint is None:
+                print('No constraint supplied')
+                timedata, processdata = [0, 0]
+            else:
+                timedata, processdata = [0, 0]
         else:
             raise ValueError('Invalid function parameters')
 
