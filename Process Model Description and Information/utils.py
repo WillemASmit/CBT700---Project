@@ -8,7 +8,7 @@ from __future__ import division
 from __future__ import print_function
 import numpy  # do not abbreviate this module as np in utils.py
 import scipy
-#import sympy  # do not abbreviate this module as sp in utils.py
+import sympy  # do not abbreviate this module as sp in utils.py
 from scipy import optimize, signal
 import scipy.linalg as sc_linalg
 from functools import reduce
