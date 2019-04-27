@@ -1,11 +1,9 @@
 \BOOKMARK [1][-]{section*.1}{Synopysis}{}% 1
 \BOOKMARK [1][-]{section.1}{Introduction}{}% 2
-\BOOKMARK [1][-]{section.2}{CSC 421 teaching assistants}{}% 3
-\BOOKMARK [1][-]{section.3}{LaTeX overview}{}% 4
-\BOOKMARK [2][-]{subsection.3.1}{The template content}{section.3}% 5
-\BOOKMARK [2][-]{subsection.3.2}{Edit and compilation of a LaTeX document}{section.3}% 6
-\BOOKMARK [1][-]{section.4}{Basic examples}{}% 7
-\BOOKMARK [2][-]{subsection.4.1}{Figures}{section.4}% 8
-\BOOKMARK [2][-]{subsection.4.2}{Mathematics}{section.4}% 9
-\BOOKMARK [2][-]{subsection.4.3}{Tables}{section.4}% 10
-\BOOKMARK [2][-]{subsection.4.4}{Referencing}{section.4}% 11
+\BOOKMARK [1][-]{section.2}{Process Model Description}{}% 3
+\BOOKMARK [2][-]{subsection.2.1}{System Diagram}{section.2}% 4
+\BOOKMARK [2][-]{subsection.2.2}{System Description}{section.2}% 5
+\BOOKMARK [2][-]{subsection.2.3}{Measurement of Variables}{section.2}% 6
+\BOOKMARK [2][-]{subsection.2.4}{System Variables}{section.2}% 7
+\BOOKMARK [2][-]{subsection.2.5}{System Model}{section.2}% 8
+\BOOKMARK [2][-]{subsection.2.6}{Scaling the System}{section.2}% 9
