@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  27 APR 2019 08:54
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  28 APR 2019 15:02
 entering extended mode
 **./report.tex
 (report.tex
@@ -1296,13 +1296,13 @@ LaTeX Warning: Reference `sec:Introduction' on page i undefined on input line 3
  [6]
 No file report.nls.
 ) (Introduction.tex
-<"Figures/VLE Ethanol 2".png, id=97, 473.51906pt x 229.60782pt>
+<"Figures/VLE Ethanol 2".png, id=165, 473.51906pt x 229.60782pt>
 File: "Figures/VLE Ethanol 2".png Graphic file (type png)
 <use "Figures/VLE Ethanol 2".png>
 Package pdftex.def Info: "Figures/VLE Ethanol 2".png  used on input line 11.
 (pdftex.def)             Requested size: 317.07614pt x 153.75235pt.
 ) (Process_Model_Description.tex
-<Figures/Process_PFD.png, id=100, 771.63281pt x 545.03625pt>
+<Figures/Process_PFD.png, id=168, 771.63281pt x 545.03625pt>
 File: Figures/Process_PFD.png Graphic file (type png)
 <use Figures/Process_PFD.png>
 Package pdftex.def Info: Figures/Process_PFD.png  used on input line 9.
@@ -1317,12 +1317,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
 
 [2 <./Figures/Process_PFD.png>] [3]
-<Figures/Pulse_test_1.png, id=121, 322.20375pt x 210.7875pt>
+<Figures/Pulse_test_1.png, id=189, 322.20375pt x 210.7875pt>
 File: Figures/Pulse_test_1.png Graphic file (type png)
 <use Figures/Pulse_test_1.png>
 Package pdftex.def Info: Figures/Pulse_test_1.png  used on input line 97.
 (pdftex.def)             Requested size: 217.42265pt x 142.24326pt.
-<Figures/Pulse_test_2.png, id=122, 312.41719pt x 211.54031pt>
+<Figures/Pulse_test_2.png, id=190, 312.41719pt x 211.54031pt>
 File: Figures/Pulse_test_2.png Graphic file (type png)
 <use Figures/Pulse_test_2.png>
 Package pdftex.def Info: Figures/Pulse_test_2.png  used on input line 104.
@@ -1332,21 +1332,33 @@ Overfull \hbox (15.1677pt too wide) in paragraph at lines 167--176
  [][] 
  []
 
-[6])
+[6]) (Controllability_Analysis.tex [7]
+<"Figures/G(s) Singular Values".png, id=237, 403.5075pt x 275.0275pt>
+File: "Figures/G(s) Singular Values".png Graphic file (type png)
+<use "Figures/G(s) Singular Values".png>
+Package pdftex.def Info: "Figures/G(s) Singular Values".png  used on input line
+ 35.
+(pdftex.def)             Requested size: 317.07614pt x 216.11948pt.
+ [8] [9 <./Figures/G(s) Singular Values.png>] [10] [11]
+<Figures/Poles_and_Zeros.png, id=265, 405.515pt x 266.9975pt>
+File: Figures/Poles_and_Zeros.png Graphic file (type png)
+<use Figures/Poles_and_Zeros.png>
+Package pdftex.def Info: Figures/Poles_and_Zeros.png  used on input line 143.
+(pdftex.def)             Requested size: 317.07614pt x 208.7746pt.
+ [12])
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-[7]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 43.
- [8]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 43.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 45.
+[13 <./Figures/Poles_and_Zeros.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 45.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 43.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 43.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 45.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 45.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 4D74DA511B1CEA30C940A265230F3A51;557.
+(rerunfilecheck)             Checksum: 681B85C498D9D8D63E3927D077C9AF00;1455.
 
 
 LaTeX Warning: There were undefined references.
@@ -1356,33 +1368,34 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 29895 strings out of 492946
- 560325 string characters out of 3126710
- 997870 words of memory out of 3000000
- 33417 multiletter control sequences out of 15000+200000
- 549590 words of font info for 90 fonts, out of 3000000 for 9000
+ 29932 strings out of 492946
+ 561145 string characters out of 3126710
+ 1001314 words of memory out of 3000000
+ 33422 multiletter control sequences out of 15000+200000
+ 544422 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,14n,77p,1133b,1726s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,15n,77p,1133b,1149s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/Wian/AppData/Local/Programs/MiK
-TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Wian/AppData/Local/
-Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Wian/App
-Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Use
-rs/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmr10.
-pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfont
-s/cm/cmr12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pub
-lic/amsfonts/cm/cmr6.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts
-/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX
- 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Wian/AppData/Local/Pro
-grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Wian/AppDat
-a/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/
-Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti12.pf
-b>
-Output written on report.pdf (14 pages, 249392 bytes).
+TeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Wian/AppData/Local/
+Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi12.pfb><C:/Users/Wian/Ap
+pData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Us
+ers/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8
+.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfon
+ts/cm/cmr10.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/pu
+blic/amsfonts/cm/cmr12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fon
+ts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Wian/AppData/Local/Programs/MiKT
+eX 2.9/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Wian/AppData/Local/Pro
+grams/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Wian/AppDa
+ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
+/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy8.pf
+b><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
+cm/cmti12.pfb>
+Output written on report.pdf (19 pages, 299752 bytes).
 PDF statistics:
- 235 PDF objects out of 1000 (max. 8388607)
- 51 named destinations out of 1000 (max. 500000)
- 93 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 346 PDF objects out of 1000 (max. 8388607)
+ 77 named destinations out of 1000 (max. 500000)
+ 191 words of extra memory for PDF output out of 10000 (max. 10000000)
 

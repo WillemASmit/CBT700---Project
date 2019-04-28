@@ -8,3 +8,14 @@
 \contentsline {subsection}{\numberline {2.4}System Variables}{3}{subsection.2.4}% 
 \contentsline {subsection}{\numberline {2.5}System Model}{4}{subsection.2.5}% 
 \contentsline {subsection}{\numberline {2.6}Scaling the System}{5}{subsection.2.6}% 
+\contentsline {section}{\numberline {3}Controllability Analysis}{7}{section.3}% 
+\contentsline {subsection}{\numberline {3.1}Minimal Realisation of the System}{8}{subsection.3.1}% 
+\contentsline {subsection}{\numberline {3.2}Functional Controllability}{8}{subsection.3.2}% 
+\contentsline {subsection}{\numberline {3.3}System Poles}{9}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Calculating the System Poles}{9}{subsubsection.3.3.1}% 
+\contentsline {subsubsection}{\numberline {3.3.2}Calculating the System Pole Directions}{10}{subsubsection.3.3.2}% 
+\contentsline {subsubsection}{\numberline {3.3.3}Discussion of System Poles}{10}{subsubsection.3.3.3}% 
+\contentsline {subsection}{\numberline {3.4}System Zeros}{10}{subsection.3.4}% 
+\contentsline {subsubsection}{\numberline {3.4.1}Calculating the System Zeros}{10}{subsubsection.3.4.1}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Calculating the System Zero Directions}{11}{subsubsection.3.4.2}% 
+\contentsline {subsubsection}{\numberline {3.4.3}Discussion of System Zeros}{.13}{subsubsection.3.4.3}% 

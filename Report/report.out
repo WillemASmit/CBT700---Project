@@ -7,3 +7,14 @@
 \BOOKMARK [2][-]{subsection.2.4}{System Variables}{section.2}% 7
 \BOOKMARK [2][-]{subsection.2.5}{System Model}{section.2}% 8
 \BOOKMARK [2][-]{subsection.2.6}{Scaling the System}{section.2}% 9
+\BOOKMARK [1][-]{section.3}{Controllability Analysis}{}% 10
+\BOOKMARK [2][-]{subsection.3.1}{Minimal Realisation of the System}{section.3}% 11
+\BOOKMARK [2][-]{subsection.3.2}{Functional Controllability}{section.3}% 12
+\BOOKMARK [2][-]{subsection.3.3}{System Poles}{section.3}% 13
+\BOOKMARK [3][-]{subsubsection.3.3.1}{Calculating the System Poles}{subsection.3.3}% 14
+\BOOKMARK [3][-]{subsubsection.3.3.2}{Calculating the System Pole Directions}{subsection.3.3}% 15
+\BOOKMARK [3][-]{subsubsection.3.3.3}{Discussion of System Poles}{subsection.3.3}% 16
+\BOOKMARK [2][-]{subsection.3.4}{System Zeros}{section.3}% 17
+\BOOKMARK [3][-]{subsubsection.3.4.1}{Calculating the System Zeros}{subsection.3.4}% 18
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Calculating the System Zero Directions}{subsection.3.4}% 19
+\BOOKMARK [3][-]{subsubsection.3.4.3}{Discussion of System Zeros}{subsection.3.4}% 20
