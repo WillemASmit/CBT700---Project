@@ -107,7 +107,7 @@ The fitting curves of two pulse tests are displayed in Figure~\ref{fig:test1} an
 	\end{minipage}
 \end{figure}
 
-The model was then written in the standard form of a linear MIMO system [REF!!!],
+The model was then written in the standard form of a linear MIMO system \parencite{ogun},
 
 \begin{equation}
 \textbf{y}(s) = \textbf{G}(s)\textbf{u}(s) + \textbf{G}_{d}(s)\textbf{d}(s)
@@ -142,8 +142,8 @@ G_{d31} & G_{d32} \\
 \end{equation}
 
 \subsection{Scaling the System}
-
-In order to perform a controllability analysis on the system, the system had to be scaled according to the method described in [Reff!!!].
+\label{sec:Scaling}
+In order to perform a controllability analysis on the system, the system had to be scaled according to the method described in \textcite{skogestad}.
 
 In order to perform the scaling operation, the upper and lower limits of all the variables have to be defined. The initial boundary values of all system variables are summarized in Table~\ref{tab:Manipulated_variables_scaling}, Table~\ref{tab:Controlled_variables_scaling}, and Table~\ref{tab:Disturbance_variables_scaling}.
 
@@ -177,7 +177,7 @@ In order to perform the scaling operation, the upper and lower limits of all the
 
 \begin{table}[H]
 	\centering
-	\caption{The boundaries of the controlled variables in the system.}
+	\caption{The boundaries of the disturbance variables in the system.}
 	\begin{tabular}{cccc}
 		\hline
 		\textbf{\begin{tabular}[c]{@{}c@{}}Disturbance\\   Variable\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Lower \\ Constraint\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Upper \\ Constraint\end{tabular}} & \textbf{\begin{tabular}[c]{@{}c@{}}Steady State \\ Value\end{tabular}} \\\hline

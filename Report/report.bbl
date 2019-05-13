@@ -19,78 +19,91 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
-    \entry{cengel2015}{book}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=79f385d6d0c865582b06bd4aa78febd4}{%
-           family={Çengel},
-           familyi={Ç\bibinitperiod},
-           given={Y\bibnamedelima A},
-           giveni={Y\bibinitperiod\bibinitdelim A\bibinitperiod},
+    \entry{ogun}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=dad2afa9601afe81adcd643c8f842c2e}{%
+           family={Ogunnaike},
+           familyi={O\bibinitperiod},
+           given={BA},
+           giveni={B\bibinitperiod},
            givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=c5bafb9b29c12393bb14774fd54282df}{%
-           family={Ghajar},
-           familyi={G\bibinitperiod},
-           given={A\bibnamedelima J},
-           giveni={A\bibinitperiod\bibinitdelim J\bibinitperiod},
+        {{uniquename=0,uniquepart=base,hash=1b5cd6d90e46c2bd2d27207e53c7a7fa}{%
+           family={Lemaire},
+           familyi={L\bibinitperiod},
+           given={JL},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=022cdef797eb4f1f5e70cdf58b372a8d}{%
+           family={Morari},
+           familyi={M\bibinitperiod},
+           given={M},
+           giveni={M\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=40525a380055f763b264ae119e4af1ba}{%
+           family={Ray},
+           familyi={R\bibinitperiod},
+           given={WH},
+           giveni={W\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{0dc6bd8d2c8363710a75e85bd6a05dc9}
+      \strng{fullhash}{f17293f946af451cb693e281ffd12101}
+      \strng{bibnamehash}{f17293f946af451cb693e281ffd12101}
+      \strng{authorbibnamehash}{f17293f946af451cb693e281ffd12101}
+      \strng{authornamehash}{0dc6bd8d2c8363710a75e85bd6a05dc9}
+      \strng{authorfullhash}{f17293f946af451cb693e281ffd12101}
+      \field{sortinit}{O}
+      \field{sortinithash}{dad3efd0836470093a7b4a7bb756eb8c}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{AIChE Journal}
+      \field{title}{Advanced Multivariable Control of a Pilot Plant Distillation Column}
+      \field{volume}{29 (4)}
+      \field{year}{1983}
+      \field{pages}{632 \em 639}
+      \range{pages}{-1}
+    \endentry
+    \entry{skogestad}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=42e74f4317b9403804d90fc8dda08c9c}{%
+           family={Skogestad},
+           familyi={S\bibinitperiod},
+           given={S},
+           giveni={S\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=b36619e6ad9d721beb001722c09f7e4b}{%
+           family={Postlethwaite},
+           familyi={P\bibinitperiod},
+           given={I},
+           giveni={I\bibinitperiod},
            givenun=0}}%
       }
       \list{location}{1}{%
         {New York}%
       }
       \list{publisher}{1}{%
-        {McGraw-Hill}%
+        {John Wiley \& Sons}%
       }
-      \strng{namehash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \strng{fullhash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \strng{bibnamehash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \strng{authorbibnamehash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \strng{authornamehash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \strng{authorfullhash}{bfffa6d8d504261450f4262fca9b5a7f}
-      \field{sortinit}{Ç}
-      \field{sortinithash}{963e9d84a3da2344e8833203de5aed05}
+      \strng{namehash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \strng{fullhash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \strng{bibnamehash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \strng{authorbibnamehash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \strng{authornamehash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \strng{authorfullhash}{8f67f9e45d711a556d9606bbc553f7d0}
+      \field{sortinit}{S}
+      \field{sortinithash}{322b1d5276f2f6c1bccdcd15920dbee6}
       \field{extradatescope}{labelyear}
       \field{labeldatesource}{year}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{edition}{5}
-      \field{title}{Heat and Mass Transfer}
-      \field{year}{2015}
-    \endentry
-    \entry{forster1955}{article}{}
-      \name{author}{2}{}{%
-        {{uniquename=0,uniquepart=base,hash=437484b3a88e005a992721d3e84c137f}{%
-           family={Forster},
-           familyi={F\bibinitperiod},
-           given={K},
-           giveni={K\bibinitperiod},
-           givenun=0}}%
-        {{uniquename=0,uniquepart=base,hash=0b7cd9e7c50d28940c2ad925d433c7af}{%
-           family={Zuber},
-           familyi={Z\bibinitperiod},
-           given={N},
-           giveni={N\bibinitperiod},
-           givenun=0}}%
-      }
-      \strng{namehash}{d53452d0512be87d598b2fdb07935787}
-      \strng{fullhash}{d53452d0512be87d598b2fdb07935787}
-      \strng{bibnamehash}{d53452d0512be87d598b2fdb07935787}
-      \strng{authorbibnamehash}{d53452d0512be87d598b2fdb07935787}
-      \strng{authornamehash}{d53452d0512be87d598b2fdb07935787}
-      \strng{authorfullhash}{d53452d0512be87d598b2fdb07935787}
-      \field{sortinit}{F}
-      \field{sortinithash}{669c706c6f1fbf3b5a83d26f1d9e9e72}
-      \field{extradatescope}{labelyear}
-      \field{labeldatesource}{year}
-      \field{labelnamesource}{author}
-      \field{labeltitlesource}{title}
-      \field{journaltitle}{AIChE Jl}
-      \field{title}{Dynamics of vapour bubbles and boiling heat-transfer}
-      \field{volume}{1}
-      \field{year}{1955}
-      \field{pages}{531}
-      \range{pages}{1}
+      \field{edition}{2}
+      \field{title}{Multivariable Feedback Control: Analysis and Design}
+      \field{year}{2001}
     \endentry
   \enddatalist
+  \missing{Skogestad}
 \endrefsection
 \endinput
 
