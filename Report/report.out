@@ -16,14 +16,13 @@
 \BOOKMARK [3][-]{subsubsection.3.3.3}{Discussion of System Poles}{subsection.3.3}% 16
 \BOOKMARK [2][-]{subsection.3.4}{System Zeros}{section.3}% 17
 \BOOKMARK [3][-]{subsubsection.3.4.1}{Calculating the System Zeros}{subsection.3.4}% 18
-\BOOKMARK [3][-]{subsubsection.3.4.2}{Calculating the System Zero Directions}{subsection.3.4}% 19
-\BOOKMARK [3][-]{subsubsection.3.4.3}{Discussion of System Zeros}{subsection.3.4}% 20
-\BOOKMARK [2][-]{subsection.3.5}{RGA Values of the System}{section.3}% 21
-\BOOKMARK [2][-]{subsection.3.6}{Singular Values of the System}{section.3}% 22
-\BOOKMARK [2][-]{subsection.3.7}{System Bandwidth}{section.3}% 23
-\BOOKMARK [2][-]{subsection.3.8}{Disturbance Rejection}{section.3}% 24
-\BOOKMARK [2][-]{subsection.3.9}{Disturbances and Input Saturation}{section.3}% 25
-\BOOKMARK [3][-]{subsubsection.3.9.1}{Analysis for Perfect Control}{subsection.3.9}% 26
-\BOOKMARK [3][-]{subsubsection.3.9.2}{Analysis for Acceptable Control}{subsection.3.9}% 27
-\BOOKMARK [1][-]{section.4}{Changing the System Bounds}{}% 28
-\BOOKMARK [2][-]{subsection.4.1}{Disturbance Rejection and Input Saturation}{section.4}% 29
+\BOOKMARK [3][-]{subsubsection.3.4.2}{Discussion of System Zeros}{subsection.3.4}% 19
+\BOOKMARK [2][-]{subsection.3.5}{RGA Values of the System}{section.3}% 20
+\BOOKMARK [2][-]{subsection.3.6}{Singular Values of the System}{section.3}% 21
+\BOOKMARK [2][-]{subsection.3.7}{System Bandwidth}{section.3}% 22
+\BOOKMARK [2][-]{subsection.3.8}{Disturbance Rejection}{section.3}% 23
+\BOOKMARK [2][-]{subsection.3.9}{Disturbances and Input Saturation}{section.3}% 24
+\BOOKMARK [3][-]{subsubsection.3.9.1}{Analysis for Perfect Control}{subsection.3.9}% 25
+\BOOKMARK [3][-]{subsubsection.3.9.2}{Analysis for Acceptable Control}{subsection.3.9}% 26
+\BOOKMARK [1][-]{section.4}{Changing the System Bounds}{}% 27
+\BOOKMARK [2][-]{subsection.4.1}{Disturbance Rejection and Input Saturation}{section.4}% 28

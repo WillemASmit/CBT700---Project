@@ -2002,6 +2002,7 @@
     <bcf:citekey order="4">skogestad</bcf:citekey>
     <bcf:citekey order="5">skogestad</bcf:citekey>
     <bcf:citekey order="6">skogestad</bcf:citekey>
+    <bcf:citekey order="7">skogestad</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nyt">

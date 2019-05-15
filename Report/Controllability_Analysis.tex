@@ -68,6 +68,7 @@ The poles of the system was calculated. The system has a total  number of 25 pol
 \end{table}
 
 \subsubsection{Calculating the System Pole Directions}
+\label{sec:Pole Directions}
 
 The pole directions of the system was calculated by substituting the relevant pole values into $G(s)$ and calculating the input and output directions poles. This was only done for the poles occurring in the Right Hand Plane (RHP). The calculated pole directions are listed in Table~\ref{tab: Pole Directions of system}.
 
@@ -89,8 +90,8 @@ The pole directions of the system was calculated by substituting the relevant po
 	\begin{tabular}{ccc}
 		\hline
 		\textbf{Pole} & \textbf{Input Direction ($V$)} & \textbf{Output Direction ($U$)} \\\hline
-		$p_5$            & $ \begin{bmatrix} 0.71\angle0^{\circ} \\ 0.69\angle10.1^{\circ} \\ 0.13\angle19.6^{\circ}\end{bmatrix} $ & $ \begin{bmatrix} 0.29\angle130.9^{\circ} \\ 0.96\angle146.0^{\circ} \\ 0.04\angle-48.9^{\circ}\end{bmatrix} $ \\
-		$p_6$            & $ \begin{bmatrix} 0.71\angle0^{\circ} \\ 0.69\angle-10.1^{\circ} \\ 0.13\angle-19.6^{\circ}\end{bmatrix} $ & $ \begin{bmatrix} 0.29\angle-130.9^{\circ} \\ 0.96\angle-146.0^{\circ} \\ 0.04\angle48.9^{\circ}\end{bmatrix} $ \\\hline             
+		$p_5$            & $ \begin{bmatrix} 0.71 \\ 0.69\angle10.1^{\circ} \\ 0.13\angle19.6^{\circ}\end{bmatrix} $ & $ \begin{bmatrix} 0.29\angle130.9^{\circ} \\ 0.96\angle146.0^{\circ} \\ 0.04\angle-48.9^{\circ}\end{bmatrix} $ \\
+		$p_6$            & $ \begin{bmatrix} 0.71 \\ 0.69\angle-10.1^{\circ} \\ 0.13\angle-19.6^{\circ}\end{bmatrix} $ & $ \begin{bmatrix} 0.29\angle-130.9^{\circ} \\ 0.96\angle-146.0^{\circ} \\ 0.04\angle48.9^{\circ}\end{bmatrix} $ \\\hline             
 	\end{tabular}
 	\label{tab: Pole Directions of system Phasor Notation}
 \end{table}
@@ -98,9 +99,16 @@ The pole directions of the system was calculated by substituting the relevant po
 
 \subsubsection{Discussion of System Poles}
 
-All the calculated system poles are in the open left hand plane (LHP). From this it can be concluded that the open loop system is stable. The complex poles that lie close to zero on the real axis, may pose to be of some concern. Further stability analysis of the system will shed some light regarding this. The locations of the poles of the system can be seem in Figure~\ref{fig:polesandzeros}.
+Most of the calculated system poles are in the open left hand plane (LHP). There is however one pair of complex poles that lie in the open RHP. These poles will cause instability when they are approached. To gain better understanding into the what causes the system to behave in this way, the pole directions were calculated in Section~\ref{sec:Pole Directions}. 
 
-Although the directions of the poles are calculated and displayed in Table~\ref{tab: Pole Directions of system}, the directions are not entirely relevant, as they will not cause the system to become unstable. The open loop system of $G(s)$ is therefore stable for any input direction.
+Using Table~\ref{tab: Pole Directions of system Phasor Notation} as reference the directions of the system in this unstable condition can be analysed. From the table it is clear that the unstable response exists whenever the variable $y_2$ (side stream composition) is increased by almost one unit. This cannot be done without effecting the output $y_1$, as it is increase by almost a third of a unit during this response. Only the temperature can remain relatively unaffected during the response. We also note that $y_1$ and $y_2$ are in phase with one another, while$y_3$ is out of phase the first two outputs.
+
+Looking at the input directions in Table~\ref{tab: Pole Directions of system Phasor Notation}, it is clear that the described output is obtained from manipulation of $u_1$ and $u_2$. While $u_3$ is manipulated slightly, its amplitude is well below the amplitude of the other system inputs. We can therefore generalize and say that the pole exists when reflux flow rate is increased and side stream draw off flow rate is decreased by the same amount. One small thing to note, is that the input $u_1$ does not have a phasor notation, as it is not a complex variable.
+
+From the above it is clear, that the side stream composition cannot stepped one unit by manipulating the side stream flow rate and reflux flow rate exclusively. This composition will have to be controlled other combinations of measured variable, for the system to remain stable.
+
+From a production point of view, this will not likely pose to be problem, as it is not a scenario that is very likely to exist. As mentioned earlier, the main ethanol product is in the distillate of the column. The shift described by this pole, will decrease both the distillate and side stream flow rates, resulting in a plummeting production profit as the product streams are redirected to waste or downstream processing (the bottoms flow).
+ 
 
 \subsection{System Zeros}
 \label{sec:System Zeros}
@@ -127,28 +135,7 @@ The system zeros were calculated. The system contains a total number of nine zer
 	\label{tab: Zeros of system}
 \end{table}
 
-\subsubsection{Calculating the System Zero Directions}
-
-The zero directions of the system was calculated by substituting all the zero values into $G(s)$ and calculating the input and output directions of the relevant zeros using the singular value decomposition of $G(z_i)$. The calculated zero directions are given Table~\ref{tab: Zero Directions of system}.
-
-\begin{table}[H]
-	\centering
-	\caption{The zero directions of the system.}
-	\begin{tabular}{ccc}
-		\hline
-		\textbf{Zero} & \textbf{Input Direction ($V$)} & \textbf{Output Direction ($U$)} \\\hline
-		$z_1$            &$ \begin{bmatrix} 1 \\ 0 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 1 \\ 0\end{bmatrix} $ \\
-		$z_2$            &$ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ \\
-		$z_3$            &$ \begin{bmatrix} 0 \\ -1 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 1 \\ 0\end{bmatrix} $ \\
-		$z_4$            &$ \begin{bmatrix} -1 \\ 0 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} -1 \\ 0 \\ 0\end{bmatrix} $ \\
-		$z_5$            &$ \begin{bmatrix} -1 \\ 0 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ \\
-		$z_6$            &$ \begin{bmatrix} 0 \\ 1 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} -1 \\ 0 \\ 0\end{bmatrix} $ \\
-		$z_7$            &$ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ & $ \begin{bmatrix} -0.707 \\ -0.707 \\ 0\end{bmatrix} $ \\
-		$z_8$            &$ \begin{bmatrix} 0 \\ 1 \\ 0\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ \\
-		$z_9$            &$ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ & $ \begin{bmatrix} 0 \\ 0 \\ 1\end{bmatrix} $ \\\hline             
-	\end{tabular}
-	\label{tab: Zero Directions of system}
-\end{table}
+Since all zeros are in the LHP, and will in no way cause limitations on the bandwidth or stability of the system, the directions of the zeros were not calculated.
 
 \subsubsection{Discussion of System Zeros}
 
@@ -166,7 +153,7 @@ LHP zeros will mostly cause high overshoots during control, but this does not po
 \subsection{RGA Values of the System}
 \label{sec:RGA Calculation}
 
-The Routh Gain Array (RGA) of $G(j\omega)$ was calculated, for all values of $\omega$. This enables the analysis of RGA values not only for at the crossover frequencies, but at all other frequencies to thoroughly check for large RGA elements that will render a plant that is difficult to control. The calculated RGA analysis can be seen in Figure~\ref{fig:rga-values}.
+The Routh Gain Array (RGA) of $G(j\omega)$ was calculated, for all values of $\omega$, where the frequency domain analysis held stable. This enables the analysis of RGA values not only for at the crossover frequencies, but at all other frequencies to thoroughly check for large RGA elements that will render a plant that is difficult to control. Due to dead time in the system, the frequency response of the RGA calculation tends to become severely unstable at higher frequencies. Luckily, spikes in the response will always tend to go downward, and the maximum RGA values can still be calculated. The calculated RGA analysis can be seen in Figure~\ref{fig:rga-values}.
 
 \begin{figure}[H]
 	\centering
@@ -175,7 +162,7 @@ The Routh Gain Array (RGA) of $G(j\omega)$ was calculated, for all values of $\o
 	\label{fig:rga-values}
 \end{figure}
 
-To verify that the off-diagonal values remain within acceptable ranges, the RGA of $G(0)$ and $G(j\omega)$ with $\omega = 10^3$ was calculated. The two matrices calculated are
+To verify that the off-diagonal values remain within acceptable ranges, the RGA of $G(0)$ and $G(j\omega)$ with $\omega = 10^{-1}$ was calculated. The two matrices calculated are
 
 \begin{equation}
 	\Lambda G(0) = \begin{bmatrix}
@@ -186,10 +173,10 @@ To verify that the off-diagonal values remain within acceptable ranges, the RGA 
 \end{equation}
 
 \begin{equation}
-\Lambda G(j10^3) = \begin{bmatrix}
-2.69 & -1.63 & -0.03\\
--1.52 & 2.53 & -0.01\\
--0.17 & 0.13 & 1.04
+\Lambda G(j10^{-1}) = \begin{bmatrix}
+1.36 & -0.33 & -0.03\\
+-0.37 & 1.34 & -0.03\\
+0.02 & -0.02 & 1.00
 \end{bmatrix}
 \end{equation}
 
@@ -253,9 +240,26 @@ The bandwidth of the system is the maximum frequency where sensible control can 
 	|S(j\omega)| = \frac{1}{\sqrt{2}}
 \end{equation}
 
-Since no controller is implemented as yet, there is no way of calculating the sensitivity function. As discussed in Section~\ref{sec:System Poles} and Section~\ref{sec:System Zeros}, there are no Right Hand Plane (RHP) poles or zeros in this system. There are therefore no special bandwidth limitations on the system due to these parameters.
+Since no controller is implemented as yet, there is no way of calculating the sensitivity function. As discussed in Section~\ref{sec:System Poles} and Section~\ref{sec:System Zeros}, there are no Right Hand Plane (RHP) zeros in this system. There are two RHP poles present, that will impose limitation on the on the system. The limitation imposed on the system are
 
-The system does however contain a lot of dead time. There is dead time in each transfer function, as this is it is inherent to the fitting function used to build the model. There are constraints on the bandwidth due to this dead time. To visualize the dead time inherent to the system, please refer to Equation~\ref{eq:Deadtime Matrix}. This equation, simply named the dead time matrix, is a representation of the dead time elements ($\theta$) for the respective transfer functions.
+\begin{enumerate}
+	\item Limitations on the input usage. This constrains the amount of gain that can be applied to the system with a controller. In general
+	
+	\begin{equation}
+		||KS||_{\infty} \geq ||u^H_p G_s(p)^{-1}||_2
+	\end{equation}
+	This is not entirely relevant to this report, as it entails the implementation of a controller. While this upper bound may be useful to assist with the design of the controller, the main focus of this report will remain on the controllability of the system.
+	
+	\item Limitations on the bandwidth. In short, the system has to react fast enough to avoid running into stability problems. The RHP pole therefore gives a minimum bound on the bandwidth (unlike RHP-zeros, which impose maximum bound constraints). According to \textcite{skogestad} the minimum closed loop bandwidth is 
+	
+	\begin{equation}
+		\omega_B \geq 2|p|
+	\end{equation}
+	
+	Using the equation the minimum bandwidth can be calculate to be $\omega_B = 0.46$. This gives a response time of less than 2.15 minutes.
+\end{enumerate}
+
+The system also contains a lot of dead time. There is dead time in each transfer function, as this is it is inherent to the fitting function used to build the model. There are constraints on the bandwidth due to this dead time. To visualize the dead time inherent to the system, please refer to Equation~\ref{eq:Deadtime Matrix}. This equation, simply named the dead time matrix, is a representation of the dead time elements ($\theta_{ij}$) for the respective transfer functions.
 
 \begin{equation}
 	\label{eq:Deadtime Matrix}
@@ -272,7 +276,7 @@ The lower bound time delay for each output (or contained within each row of $\Th
 	\theta_i^{min} = \min_j \theta_{ij}
 \end{equation}
 
-The bandwidth of input $u_i$ is then limited by $1/\theta_i$. Table~\ref{tab:Bandwidths}, contains a summary of the bandwidth limitations of the system.
+The bandwidth of input $u_i$ is then limited by the lower bound $1/\theta_i$. Table~\ref{tab:Bandwidths}, contains a summary of the bandwidth limitations of the system.
 
 \begin{table}[H]
 	\centering
@@ -288,11 +292,12 @@ The bandwidth of input $u_i$ is then limited by $1/\theta_i$. Table~\ref{tab:Ban
 	\label{tab:Bandwidths}
 \end{table}
 
-While these limitations are in no way ideal, the do not pose to be a major threat for the control of the system. There are a few conclusions that can be drawn from this, namely
+While these limitations are in no way ideal, they do not pose to be a major threat for the control of the system. There are a few conclusions that can be drawn from this, namely
 
 \begin{enumerate}
 	\item When looking at Equation~\ref{eq:Deadtime Matrix} together with Section~\ref{sec:RGA Calculation}, it is clear that the diagonal elements that are paired in the RGA matrix, also contain the least amount of dead time. This is good, as it is obvious that you want to control a variable with an input that does not take long to effect the variable. Pairing of the variables are therefore made relatively straight forward.
 	\item The delays imposed are not that significant when considering the desired response times for the control system. Required response times for the variables of the distillation column range between 30 and 60 minutes. The maximum delay calculated here (3 minutes), is relatively small and a low gain controller should be able to control the system with adequate performance. The performance of the system is discussed in more detail later in the report.
+	\item Controlled variables $y_1$ and $y_2$ are more constrained by the RHP pole that exist than the delay that is inherent to these variables. Only $y_3$ is limited by the delay of the response.
 \end{enumerate}
 
 \subsection{Disturbance Rejection}

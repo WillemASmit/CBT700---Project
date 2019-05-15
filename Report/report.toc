@@ -17,14 +17,13 @@
 \contentsline {subsubsection}{\numberline {3.3.3}Discussion of System Poles}{11}{subsubsection.3.3.3}% 
 \contentsline {subsection}{\numberline {3.4}System Zeros}{11}{subsection.3.4}% 
 \contentsline {subsubsection}{\numberline {3.4.1}Calculating the System Zeros}{11}{subsubsection.3.4.1}% 
-\contentsline {subsubsection}{\numberline {3.4.2}Calculating the System Zero Directions}{11}{subsubsection.3.4.2}% 
-\contentsline {subsubsection}{\numberline {3.4.3}Discussion of System Zeros}{12}{subsubsection.3.4.3}% 
+\contentsline {subsubsection}{\numberline {3.4.2}Discussion of System Zeros}{12}{subsubsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.5}RGA Values of the System}{13}{subsection.3.5}% 
 \contentsline {subsection}{\numberline {3.6}Singular Values of the System}{14}{subsection.3.6}% 
 \contentsline {subsection}{\numberline {3.7}System Bandwidth}{16}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{17}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}Disturbances and Input Saturation}{19}{subsection.3.9}% 
-\contentsline {subsubsection}{\numberline {3.9.1}Analysis for Perfect Control}{19}{subsubsection.3.9.1}% 
-\contentsline {subsubsection}{\numberline {3.9.2}Analysis for Acceptable Control}{21}{subsubsection.3.9.2}% 
-\contentsline {section}{\numberline {4}Changing the System Bounds}{24}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{24}{subsection.4.1}% 
+\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{18}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}Disturbances and Input Saturation}{20}{subsection.3.9}% 
+\contentsline {subsubsection}{\numberline {3.9.1}Analysis for Perfect Control}{20}{subsubsection.3.9.1}% 
+\contentsline {subsubsection}{\numberline {3.9.2}Analysis for Acceptable Control}{22}{subsubsection.3.9.2}% 
+\contentsline {section}{\numberline {4}Changing the System Bounds}{25}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{25}{subsection.4.1}% 
