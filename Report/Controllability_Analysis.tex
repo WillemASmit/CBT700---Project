@@ -182,6 +182,8 @@ To verify that the off-diagonal values remain within acceptable ranges, the RGA 
 
 \subsection{Singular Values of the System}
 
+\subsubsection{The Minimum Singular Value and Set-point Tracking}
+
 The minimum singular value is a useful tool when doing controllability an analysis. The minimum singular value for this system is depicted in Figure~\ref{fig:gs-singular-values}.
 
 The minimum singular value should be as large as possible, especially at frequencies where control is needed \parencite{skogestad}.
@@ -193,7 +195,7 @@ From Figure`\ref{fig:gs-singular-values}, it is clear that
 	\underline{\sigma}(G(j\omega)) < 1 , \forall \omega
 \end{equation}
 
-This implies that it is not possible to make output changes of unit magnitude, by using inputs of unit magnitude for any values of $\omega$. 
+This implies that it is not possible to make output changes of unit magnitude, by using inputs of unit magnitude for any input direction of $V$. 
 
 This is bad from a controllability point of view, especially when considering set-point tracking. When tracking set-points, outputs ideally have to controlled by making single set-point changes. This enables the use of a decentralized controller. An example of such a controller (represented in a standard transfer function notation) is
 
@@ -207,7 +209,7 @@ This is bad from a controllability point of view, especially when considering se
 
 With the current plant configuration and design, the use of a decentralized controller is possible, but adequate set-point tracking will not be possible as the outputs will not reach the set-points on the high and/or low set-point values.
 
-For example; when the temperature on tray \# 19 , $y_3$, is controlled between 88 and 96 $^{\circ}$, set-point tracking by manipulation of the stream feed pressure, $u_3$, will be acceptable (when considering a decentralized controller that contains an integral component). Acceptable set-point tracking includes: fast response time, elimination of error, robust responses. An adequately fast response time for this system will be around 45 minutes. With a high enough gain value, $K_{c3}$, this will be achieved. The integral component of the controller will eliminate the error completely over time, given that the integral component of the controller, $\tau_{c3}$, is large enough. Robust control will be achieved by tuning the controller values after initial implementation.
+For example; when the temperature on tray \# 19 , $y_3$, is controlled between 88 and 96~$\celsius$, set-point tracking by manipulation of the stream feed pressure, $u_3$, will be acceptable (when considering a decentralized controller that contains an integral component). Acceptable set-point tracking includes: fast response time, elimination of error, robust responses. An adequately fast response time for this system will be around 45 minutes. With a high enough gain value, $K_{c3}$, this will be achieved. The integral component of the controller will eliminate the error completely over time, given that the integral component of the controller, $\tau_{c3}$, is large enough. Robust control will be achieved by tuning the controller values after initial implementation.
 
 Now, when considering set-points on the outer limits of the control range for $y_3$, the control system will not perform acceptably. For instance when the set-point of $y_3$ is set to ranges 84 to 88 $\celsius$ or 96 to 100 $\celsius$, the response time of the set-point change may still be good, but the error will not be able to be cancelled. This is due to the minimum singular value of the system being smaller than 1. The unit change in the input, $u_3$, will not cause a unit change in the output, $y_3$. Since the system is scaled, this simply means that the outer set-points cannot be reached by only manipulating one input variable. 
 
@@ -231,6 +233,66 @@ The are a few options for improvement and successful implementation of the contr
 	
 	\item Lower the required range wherein set-point tracking has to be performed. 
 \end{enumerate}
+
+More insight into the problem is gained when the different singular value directions are analysed. 
+
+\subsubsection{Singular Value Directions}
+
+The directions of the singular values are used to gain better understanding into how the three outputs are responsible for the overall system gain. The directions are calculate at both low and higher frequencies to analyse the behaviour at a wide range of frequencies. The two frequencies selected are $\omega = 0$ for low frequncies (or steady state values), and $\omega = 1$, which is the frequency at which the delays in the system causes the singular value to oscillate. The SVD for the low gain value is calculated as
+
+\begin{equation}
+	G(0) = 
+	\underbrace{
+		\begin{bmatrix}
+		-0.38 & 0.88 & 0.26\\
+		-0.92 & -0.39 & -0.03\\
+		0.07 & -0.25 & 0.96\\
+		\end{bmatrix}
+	}_{U}
+	\underbrace{
+		\begin{bmatrix}
+		12.9 & 0 & 0\\
+		0 & 2.21 & 0\\
+		0 & 0 & 0.56\\
+		\end{bmatrix}
+	}_{\Sigma}
+	\underbrace{
+		\begin{bmatrix}
+		-0.64 & 0.51 & 0.57 \\
+		0.73 & 0.62 & 0.23 \\
+		0.22 & -0.59 & 0.77\\
+		\end{bmatrix}
+	}_{V^H}
+\end{equation}
+
+while the SVD for the higher gain is 
+
+\begin{equation}
+U(G(1j)) = 
+	\begin{bmatrix}
+	0.17\angle152^{\circ} & 0.96\angle-74.3^{\circ} & 0.22\angle116^{\circ}\\
+	0.98\angle-86.4^{\circ} & 0.15\angle-132^{\circ} & 0.02\angle58.3^{\circ}\\
+	0.0\angle-30.1^{\circ} & 0.23\angle100^{\circ} & 0.97\angle111^{\circ}\\
+	\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	\Sigma(G(1j)) =
+		\begin{bmatrix}
+		2.83 & 0 & 0\\
+		0 & 0.59 & 0\\
+		0 & 0 & 0.10\\
+		\end{bmatrix}
+\end{equation}
+
+\begin{equation}
+	V^H(G(1j)) = 
+		\begin{bmatrix}
+		0.77\angle0.0^{\circ} & 0.58\angle-180^{\circ} & 0.25\angle0.0^{\circ}\\
+		0.63\angle-17.2^{\circ} & 0.65\angle-18.3^{\circ} & 0.41\angle166^{\circ}\\
+		0.07\angle-134^{\circ} & 0.47\angle-121^{\circ} & 0.87\angle-117^{\circ}\\
+		\end{bmatrix}
+\end{equation}
 
 \subsection{System Bandwidth}
 
@@ -297,7 +359,7 @@ While these limitations are in no way ideal, they do not pose to be a major thre
 \begin{enumerate}
 	\item When looking at Equation~\ref{eq:Deadtime Matrix} together with Section~\ref{sec:RGA Calculation}, it is clear that the diagonal elements that are paired in the RGA matrix, also contain the least amount of dead time. This is good, as it is obvious that you want to control a variable with an input that does not take long to effect the variable. Pairing of the variables are therefore made relatively straight forward.
 	\item The delays imposed are not that significant when considering the desired response times for the control system. Required response times for the variables of the distillation column range between 30 and 60 minutes. The maximum delay calculated here (3 minutes), is relatively small and a low gain controller should be able to control the system with adequate performance. The performance of the system is discussed in more detail later in the report.
-	\item Controlled variables $y_1$ and $y_2$ are more constrained by the RHP pole that exist than the delay that is inherent to these variables. Only $y_3$ is limited by the delay of the response.
+	\item Controlled variables $y_1$ and $y_2$ are more constrained by the RHP pole that exist than the delay that is inherent to these variables. Only $y_3$ is limited by the delay of the response. This is expected as the pole clearly influences $y_1$ and $y_2$ the most (Table~\ref{tab: Pole Directions of system}). $y_3$ also has the least amount of dead time, shortening the period wherein reasonable control can be expected.
 \end{enumerate}
 
 \subsection{Disturbance Rejection}

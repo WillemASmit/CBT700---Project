@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  15 MAY 2019 21:29
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  16 MAY 2019 20:07
 entering extended mode
 **./report.tex
 (report.tex
@@ -1317,13 +1317,13 @@ LaTeX Warning: Reference `sec:Introduction' on page i undefined on input line 3
  [7]
 No file report.nls.
 ) (Introduction.tex
-<"Figures/VLE Ethanol 2".png, id=245, 473.51906pt x 229.60782pt>
+<"Figures/VLE Ethanol 2".png, id=260, 473.51906pt x 229.60782pt>
 File: "Figures/VLE Ethanol 2".png Graphic file (type png)
 <use "Figures/VLE Ethanol 2".png>
 Package pdftex.def Info: "Figures/VLE Ethanol 2".png  used on input line 11.
 (pdftex.def)             Requested size: 317.07614pt x 153.75235pt.
 ) (Process_Model_Description.tex
-<Figures/Process_PFD.png, id=248, 771.63281pt x 545.03625pt>
+<Figures/Process_PFD.png, id=263, 771.63281pt x 545.03625pt>
 File: Figures/Process_PFD.png Graphic file (type png)
 <use Figures/Process_PFD.png>
 Package pdftex.def Info: Figures/Process_PFD.png  used on input line 9.
@@ -1338,12 +1338,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
 
 [2 <./Figures/Process_PFD.png>] [3]
-<Figures/Pulse_test_1.png, id=268, 322.20375pt x 210.7875pt>
+<Figures/Pulse_test_1.png, id=283, 322.20375pt x 210.7875pt>
 File: Figures/Pulse_test_1.png Graphic file (type png)
 <use Figures/Pulse_test_1.png>
 Package pdftex.def Info: Figures/Pulse_test_1.png  used on input line 97.
 (pdftex.def)             Requested size: 217.42265pt x 142.24326pt.
-<Figures/Pulse_test_2.png, id=269, 312.41719pt x 211.54031pt>
+<Figures/Pulse_test_2.png, id=284, 312.41719pt x 211.54031pt>
 File: Figures/Pulse_test_2.png Graphic file (type png)
 <use Figures/Pulse_test_2.png>
 Package pdftex.def Info: Figures/Pulse_test_2.png  used on input line 104.
@@ -1354,78 +1354,78 @@ Overfull \hbox (15.1677pt too wide) in paragraph at lines 167--176
  []
 
 [6]) (Controllability_Analysis.tex [7]
-<"Figures/G(s) Singular Values".png, id=320, 399.4925pt x 275.0275pt>
+<"Figures/G(s) Singular Values".png, id=335, 399.4925pt x 275.0275pt>
 File: "Figures/G(s) Singular Values".png Graphic file (type png)
 <use "Figures/G(s) Singular Values".png>
 Package pdftex.def Info: "Figures/G(s) Singular Values".png  used on input line
  35.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
  [8] [9 <./Figures/G(s) Singular Values.png>] [10] [11]
-<Figures/Poles_and_Zeros.png, id=352, 398.48875pt x 266.9975pt>
+<Figures/Poles_and_Zeros.png, id=367, 398.48875pt x 266.9975pt>
 File: Figures/Poles_and_Zeros.png Graphic file (type png)
 <use Figures/Poles_and_Zeros.png>
 Package pdftex.def Info: Figures/Poles_and_Zeros.png  used on input line 148.
 (pdftex.def)             Requested size: 317.07614pt x 212.45753pt.
  [12]
-<"Figures/RGA Values".png, id=359, 399.4925pt x 275.0275pt>
+<"Figures/RGA Values".png, id=374, 399.4925pt x 275.0275pt>
 File: "Figures/RGA Values".png Graphic file (type png)
 <use "Figures/RGA Values".png>
 Package pdftex.def Info: "Figures/RGA Values".png  used on input line 160.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
  [13 <./Figures/Poles_and_Zeros.png>] [14 <./Figures/RGA Values.png>] [15] [16]
- [17] [18]
-<"Figures/Disturbance Direction".png, id=420, 399.4925pt x 275.0275pt>
+ [17] [18] [19]
+<"Figures/Disturbance Direction".png, id=443, 399.4925pt x 275.0275pt>
 File: "Figures/Disturbance Direction".png Graphic file (type png)
 <use "Figures/Disturbance Direction".png>
 Package pdftex.def Info: "Figures/Disturbance Direction".png  used on input lin
-e 321.
+e 383.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
- [19 <./Figures/Disturbance Direction.png>]
-<"Figures/Disturbance Analysis 1".png, id=432, 399.4925pt x 275.0275pt>
+ [20 <./Figures/Disturbance Direction.png>]
+<"Figures/Disturbance Analysis 1".png, id=456, 399.4925pt x 275.0275pt>
 File: "Figures/Disturbance Analysis 1".png Graphic file (type png)
 <use "Figures/Disturbance Analysis 1".png>
 Package pdftex.def Info: "Figures/Disturbance Analysis 1".png  used on input li
-ne 353.
+ne 415.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
 
-[20 <./Figures/Disturbance Analysis 1.png>]
-<"Figures/Disturbance Analysis 2 Max Norm".png, id=444, 393.47pt x 275.0275pt>
+[21 <./Figures/Disturbance Analysis 1.png>]
+<"Figures/Disturbance Analysis 2 Max Norm".png, id=467, 393.47pt x 275.0275pt>
 File: "Figures/Disturbance Analysis 2 Max Norm".png Graphic file (type png)
 <use "Figures/Disturbance Analysis 2 Max Norm".png>
 Package pdftex.def Info: "Figures/Disturbance Analysis 2 Max Norm".png  used on
- input line 394.
+ input line 456.
 (pdftex.def)             Requested size: 317.07614pt x 221.62958pt.
- [21 <./Figures/Disturbance Analysis 2 Max Norm.png>]
-<Figures/InputSaturation1.png, id=459, 399.4925pt x 275.0275pt>
+ [22 <./Figures/Disturbance Analysis 2 Max Norm.png>]
+<Figures/InputSaturation1.png, id=483, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation1.png Graphic file (type png)
 <use Figures/InputSaturation1.png>
-Package pdftex.def Info: Figures/InputSaturation1.png  used on input line 420.
+Package pdftex.def Info: Figures/InputSaturation1.png  used on input line 482.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation2.png, id=462, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation2.png, id=486, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation2.png Graphic file (type png)
 <use Figures/InputSaturation2.png>
-Package pdftex.def Info: Figures/InputSaturation2.png  used on input line 427.
+Package pdftex.def Info: Figures/InputSaturation2.png  used on input line 489.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation3.png, id=465, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation3.png, id=489, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation3.png Graphic file (type png)
 <use Figures/InputSaturation3.png>
-Package pdftex.def Info: Figures/InputSaturation3.png  used on input line 437.
+Package pdftex.def Info: Figures/InputSaturation3.png  used on input line 499.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/Input_Requirements.png, id=468, 399.4925pt x 275.0275pt>
+<Figures/Input_Requirements.png, id=492, 399.4925pt x 275.0275pt>
 File: Figures/Input_Requirements.png Graphic file (type png)
 <use Figures/Input_Requirements.png>
-Package pdftex.def Info: Figures/Input_Requirements.png  used on input line 444
+Package pdftex.def Info: Figures/Input_Requirements.png  used on input line 506
 .
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
 
-Underfull \hbox (badness 2409) in paragraph at lines 445--445
+Underfull \hbox (badness 2409) in paragraph at lines 507--507
 [][]|\OT1/cmr/m/n/10.95 The re-quired con-troller in-put
  []
 
-[22 <./Figures/InputSaturation1.png> <./Figures/InputSaturation2.png>] [23 <./F
+[23 <./Figures/InputSaturation1.png> <./Figures/InputSaturation2.png>] [24 <./F
 igures/InputSaturation3.png> <./Figures/Input_Requirements.png>])
-(Proposed_Changes.tex [24] [25]
-<"Figures/Disturbance Analysis 2 Max Norm_Updated".png, id=511, 399.4925pt x 27
+(Proposed_Changes.tex [25] [26]
+<"Figures/Disturbance Analysis 2 Max Norm_Updated".png, id=535, 399.4925pt x 27
 5.0275pt>
 File: "Figures/Disturbance Analysis 2 Max Norm_Updated".png Graphic file (type 
 png)
@@ -1433,25 +1433,25 @@ png)
 Package pdftex.def Info: "Figures/Disturbance Analysis 2 Max Norm_Updated".png 
  used on input line 53.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
-<Figures/InputSaturation1_Updated.png, id=512, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation1_Updated.png, id=536, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation1_Updated.png Graphic file (type png)
 <use Figures/InputSaturation1_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation1_Updated.png  used on input li
 ne 62.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation2_Updated.png, id=515, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation2_Updated.png, id=539, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation2_Updated.png Graphic file (type png)
 <use Figures/InputSaturation2_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation2_Updated.png  used on input li
 ne 69.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation3_Updated.png, id=518, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation3_Updated.png, id=542, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation3_Updated.png Graphic file (type png)
 <use Figures/InputSaturation3_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation3_Updated.png  used on input li
 ne 79.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/Input_Requirements_Updated.png, id=521, 399.4925pt x 275.0275pt>
+<Figures/Input_Requirements_Updated.png, id=545, 399.4925pt x 275.0275pt>
 File: Figures/Input_Requirements_Updated.png Graphic file (type png)
 <use Figures/Input_Requirements_Updated.png>
 Package pdftex.def Info: Figures/Input_Requirements_Updated.png  used on input 
@@ -1462,22 +1462,23 @@ Underfull \hbox (badness 2409) in paragraph at lines 87--87
 [][]|\OT1/cmr/m/n/10.95 The re-quired con-troller in-put
  []
 
-) [26 <./Figures/Disturbance Analysis 2 Max Norm_Updated.png> <./Figures/InputS
+) [27 <./Figures/Disturbance Analysis 2 Max Norm_Updated.png> <./Figures/InputS
 aturation1_Updated.png> <./Figures/InputSaturation2_Updated.png>]
+(Uncertainty.tex)
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 47.
-[27 <./Figures/InputSaturation3_Updated.png> <./Figures/Input_Requirements_Upda
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
+[28 <./Figures/InputSaturation3_Updated.png> <./Figures/Input_Requirements_Upda
 ted.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 47.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
  (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 47.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 47.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 525098583DDE9C2EBB75296C4FBE53CC;2071.
+(rerunfilecheck)             Checksum: 9DD33B974908D5C765E30EE867859F69;2330.
 
 
 LaTeX Warning: There were undefined references.
@@ -1487,10 +1488,10 @@ Package logreq Info: Writing requests to 'report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30147 strings out of 492946
- 565929 string characters out of 3126710
- 1001961 words of memory out of 3000000
- 33546 multiletter control sequences out of 15000+200000
+ 30161 strings out of 492946
+ 566192 string characters out of 3126710
+ 1001981 words of memory out of 3000000
+ 33549 multiletter control sequences out of 15000+200000
  544422 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
  48i,16n,77p,1133b,1398s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -1513,9 +1514,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 b><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on report.pdf (34 pages, 633900 bytes).
+Output written on report.pdf (35 pages, 641685 bytes).
 PDF statistics:
- 620 PDF objects out of 1000 (max. 8388607)
- 148 named destinations out of 1000 (max. 500000)
- 320 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 645 PDF objects out of 1000 (max. 8388607)
+ 156 named destinations out of 1000 (max. 500000)
+ 344 words of extra memory for PDF output out of 10000 (max. 10000000)
 

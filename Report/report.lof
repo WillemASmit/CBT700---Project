@@ -6,15 +6,15 @@
 \contentsline {figure}{\numberline {5}{\ignorespaces The singular values of $G(j\omega )$.\relax }}{9}{figure.caption.12}% 
 \contentsline {figure}{\numberline {6}{\ignorespaces A graphical representation of the system's poles and zeros.\relax }}{13}{figure.caption.17}% 
 \contentsline {figure}{\numberline {7}{\ignorespaces The diagonal values of RGA matrix, $\Lambda $, over a wide range of frequencies.\relax }}{14}{figure.caption.18}% 
-\contentsline {figure}{\numberline {8}{\ignorespaces The disturbance directions as a function of frequency.\relax }}{19}{figure.caption.20}% 
-\contentsline {figure}{\numberline {9}{\ignorespaces The disturbance directions with respect to the singular values of the sensitivity of $G(s)$, $S(s)$.\relax }}{20}{figure.caption.21}% 
-\contentsline {figure}{\numberline {10}{\ignorespaces The effect of disturbances on input saturation.\relax }}{21}{figure.caption.22}% 
-\contentsline {figure}{\numberline {11}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_1$\relax }}{22}{figure.caption.23}% 
-\contentsline {figure}{\numberline {12}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_2$\relax }}{22}{figure.caption.23}% 
-\contentsline {figure}{\numberline {13}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_3$\relax }}{23}{figure.caption.24}% 
-\contentsline {figure}{\numberline {14}{\ignorespaces The required controller input values for the worst case \relax }}{23}{figure.caption.24}% 
-\contentsline {figure}{\numberline {15}{\ignorespaces The effect of disturbances on input saturation.\relax }}{26}{figure.caption.26}% 
-\contentsline {figure}{\numberline {16}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_1$\relax }}{26}{figure.caption.27}% 
-\contentsline {figure}{\numberline {17}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_2$\relax }}{26}{figure.caption.27}% 
-\contentsline {figure}{\numberline {18}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_3$\relax }}{.27}{figure.caption.28}% 
-\contentsline {figure}{\numberline {19}{\ignorespaces The required controller input values for the worst case \relax }}{.27}{figure.caption.28}% 
+\contentsline {figure}{\numberline {8}{\ignorespaces The disturbance directions as a function of frequency.\relax }}{20}{figure.caption.20}% 
+\contentsline {figure}{\numberline {9}{\ignorespaces The disturbance directions with respect to the singular values of the sensitivity of $G(s)$, $S(s)$.\relax }}{21}{figure.caption.21}% 
+\contentsline {figure}{\numberline {10}{\ignorespaces The effect of disturbances on input saturation.\relax }}{22}{figure.caption.22}% 
+\contentsline {figure}{\numberline {11}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_1$\relax }}{23}{figure.caption.23}% 
+\contentsline {figure}{\numberline {12}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_2$\relax }}{23}{figure.caption.23}% 
+\contentsline {figure}{\numberline {13}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_3$\relax }}{24}{figure.caption.24}% 
+\contentsline {figure}{\numberline {14}{\ignorespaces The required controller input values for the worst case \relax }}{24}{figure.caption.24}% 
+\contentsline {figure}{\numberline {15}{\ignorespaces The effect of disturbances on input saturation.\relax }}{27}{figure.caption.26}% 
+\contentsline {figure}{\numberline {16}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_1$\relax }}{27}{figure.caption.27}% 
+\contentsline {figure}{\numberline {17}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_2$\relax }}{27}{figure.caption.27}% 
+\contentsline {figure}{\numberline {18}{\ignorespaces Graphical representation of criteria outlined in Equation\nobreakspace {}\ref {eq:Input saturation of disturbances}, for $e_3$\relax }}{.28}{figure.caption.28}% 
+\contentsline {figure}{\numberline {19}{\ignorespaces The required controller input values for the worst case \relax }}{.28}{figure.caption.28}% 

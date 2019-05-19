@@ -20,10 +20,13 @@
 \contentsline {subsubsection}{\numberline {3.4.2}Discussion of System Zeros}{12}{subsubsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.5}RGA Values of the System}{13}{subsection.3.5}% 
 \contentsline {subsection}{\numberline {3.6}Singular Values of the System}{14}{subsection.3.6}% 
-\contentsline {subsection}{\numberline {3.7}System Bandwidth}{16}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{18}{subsection.3.8}% 
-\contentsline {subsection}{\numberline {3.9}Disturbances and Input Saturation}{20}{subsection.3.9}% 
-\contentsline {subsubsection}{\numberline {3.9.1}Analysis for Perfect Control}{20}{subsubsection.3.9.1}% 
-\contentsline {subsubsection}{\numberline {3.9.2}Analysis for Acceptable Control}{22}{subsubsection.3.9.2}% 
-\contentsline {section}{\numberline {4}Changing the System Bounds}{25}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{25}{subsection.4.1}% 
+\contentsline {subsubsection}{\numberline {3.6.1}The Minimum Singular Value and Set-point Tracking}{14}{subsubsection.3.6.1}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Singular Value Directions}{16}{subsubsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.7}System Bandwidth}{17}{subsection.3.7}% 
+\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{19}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.9}Disturbances and Input Saturation}{21}{subsection.3.9}% 
+\contentsline {subsubsection}{\numberline {3.9.1}Analysis for Perfect Control}{21}{subsubsection.3.9.1}% 
+\contentsline {subsubsection}{\numberline {3.9.2}Analysis for Acceptable Control}{23}{subsubsection.3.9.2}% 
+\contentsline {section}{\numberline {4}Changing the System Bounds}{26}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{26}{subsection.4.1}% 
+\contentsline {section}{\numberline {5}Uncertainty and Robustness}{.28}{section.5}% 
