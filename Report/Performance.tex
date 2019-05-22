@@ -1,0 +1,30 @@
+\section{Performance Measurement}
+\label{sec:Performance Measurement}
+In order to adequately test the performance the system (nominal and robust performance), and acceptable and relative performance weight has to be formulated. This section entails the development of just such a function. 
+
+One major consideration in the performance weights are the disturbance dynamics. When designing a controller that has to reject disturbances up to an acceptable degree, the performance weight ($w_P$)can be chosen to closely represent $G_d$ in SISO systems. Dosing this for MIMO is slightly harder, as the directions of the various disturbances play a major role in the disturbance rejection dynamics. Simply taking the singular value of $G_d$ does not represent the disturbance inputs adequately.
+
+Rejecting the disturbances, however, is not the only consideration. The performance of set-point tracking dynamics also has to be taken into account. A major role player in analysing this is the bandwidth limits calculated for all of the different inputs (see Section~\ref{sec:Bandwidths}). A common choice for the form of the performance weight is 
+
+\begin{equation}
+	W_P = \textrm{diag}\{w_{Pi}\}
+\end{equation}
+
+where
+
+\begin{equation}
+	\label{eq:Performance Weigths}
+	w_{Pi} = \frac{s/M_i + \omega^*_{Bi}}{s + \omega^*_{Bi}A_i} , A_i < 1
+\end{equation}
+
+Using Equation~\ref{eq:Performance Weigths}, and selecting a small value for $A_i$ ensures approximate integral action when analysing the weighted sensitivity at very low frequencies ($\omega = 0$). $M_i$ is mostly selected as 2. This value limits the required performance at high frequencies, and at the crossover frequencies, where $\sigma(S(j\omega))>1$. For this preliminary performance weight analysis, the value for $M_i$ was chosen to be a constant 2. The bandwidths were chosen as the bandwidth limits outlined in Section~\ref{sec:Bandwidths}. The value of $A_i$ was chosen so that $A_i - \sigma_i(S(j10^{-2})) = 0$. Using this equation will ensure very tight performance requirements between the frequencies $\omega = 10^{-2}$ and $\omega^*_{Bi}$, for all of the output variables. 
+
+The proposed performance weight equation is
+
+\begin{equation}
+	W_P = \begin{bmatrix}
+	\frac{s/2 + 0.46}{s+ 0.46(0.079)} & 0 & 0\\
+	0 & \frac{s/2 + 0.46}{s+ 0.46(0.395)} & 0\\
+	0 & 0 & \frac{s/2 + 1}{s+ 1(0.692)}
+	\end{bmatrix}
+\end{equation}

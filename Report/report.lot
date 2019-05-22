@@ -7,5 +7,7 @@
 \contentsline {table}{\numberline {6}{\ignorespaces The pole directions of the system.\relax }}{10}{table.caption.14}% 
 \contentsline {table}{\numberline {7}{\ignorespaces The pole directions of the system in phasor notation.\relax }}{10}{table.caption.15}% 
 \contentsline {table}{\numberline {8}{\ignorespaces The zeros of the system.\relax }}{12}{table.caption.16}% 
-\contentsline {table}{\numberline {9}{\ignorespaces Bandwidth limitations imposed by time delays.\relax }}{19}{table.caption.19}% 
-\contentsline {table}{\numberline {10}{\ignorespaces The new proposed boundaries of the disturbance variables in the system.\relax }}{26}{table.caption.25}% 
+\contentsline {table}{\numberline {9}{\ignorespaces Bandwidth limitations imposed by time delays.\relax }}{20}{table.caption.19}% 
+\contentsline {table}{\numberline {10}{\ignorespaces The new proposed boundaries of the disturbance variables in the system.\relax }}{27}{table.caption.25}% 
+\contentsline {table}{\numberline {11}{\ignorespaces The uncertainty model of the first order plus dead time components of $G(s)$\relax }}{33}{table.caption.30}% 
+\contentsline {table}{\numberline {12}{\ignorespaces The uncertainty model of the first order plus dead time components of $G_d(s)$\relax }}{34}{table.caption.33}% 

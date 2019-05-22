@@ -19,6 +19,89 @@
 
 \refsection{0}
   \datalist[entry]{nyt/global//global/global}
+    \entry{perry}{book}{}
+      \name{author}{2}{}{%
+        {{uniquename=0,uniquepart=base,hash=078fc5e1411e02c6134655959452c276}{%
+           family={Green},
+           familyi={G\bibinitperiod},
+           given={GW},
+           giveni={G\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=fc2d4c740af7d5e97b2ab316763fa31c}{%
+           family={Perry},
+           familyi={P\bibinitperiod},
+           given={RH},
+           giveni={R\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New York}%
+      }
+      \list{publisher}{1}{%
+        {MacGraw-Hill}%
+      }
+      \strng{namehash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \strng{fullhash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \strng{bibnamehash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \strng{authorbibnamehash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \strng{authornamehash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \strng{authorfullhash}{bb36d1e342d18a2da4069837b09cf2a0}
+      \field{sortinit}{G}
+      \field{sortinithash}{5e8d2bf9d38de41b1528bd307546008f}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{8}
+      \field{title}{Perry's Chemical Engineer's Handbook}
+      \field{year}{2007}
+    \endentry
+    \entry{henstra}{article}{}
+      \name{author}{4}{}{%
+        {{uniquename=0,uniquepart=base,hash=0ab9b2f4d0dc8b13c2b3761b3b1e2167}{%
+           family={Henstra},
+           familyi={H\bibinitperiod},
+           given={AM},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=1aee2da96b765f6ef51d4728d2ab00bd}{%
+           family={Sipma},
+           familyi={S\bibinitperiod},
+           given={J},
+           giveni={J\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=5e763450518db22795d9e9a6507fc167}{%
+           family={Rinzema},
+           familyi={R\bibinitperiod},
+           given={A},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+        {{uniquename=0,uniquepart=base,hash=9b5419fc1b22f670d9745763030ea2a5}{%
+           family={Stams},
+           familyi={S\bibinitperiod},
+           given={AJM},
+           giveni={A\bibinitperiod},
+           givenun=0}}%
+      }
+      \strng{namehash}{20717c66a3c59a293a5f0cec878d3f72}
+      \strng{fullhash}{68eefa09b93bbf1cb1cc64c04b07636c}
+      \strng{bibnamehash}{68eefa09b93bbf1cb1cc64c04b07636c}
+      \strng{authorbibnamehash}{68eefa09b93bbf1cb1cc64c04b07636c}
+      \strng{authornamehash}{20717c66a3c59a293a5f0cec878d3f72}
+      \strng{authorfullhash}{68eefa09b93bbf1cb1cc64c04b07636c}
+      \field{sortinit}{H}
+      \field{sortinithash}{5f15a7bc777ad49ff15aa4d2831b1681}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Elsevier}
+      \field{title}{Microbiology of synthesis gas fermentation for biofuel production}
+      \field{volume}{18 (3)}
+      \field{year}{2007}
+      \field{pages}{200 \em 206}
+      \range{pages}{-1}
+    \endentry
     \entry{ogun}{article}{}
       \name{author}{4}{}{%
         {{uniquename=0,uniquepart=base,hash=dad2afa9601afe81adcd643c8f842c2e}{%
@@ -102,8 +185,38 @@
       \field{title}{Multivariable Feedback Control: Analysis and Design}
       \field{year}{2001}
     \endentry
+    \entry{wankat}{book}{}
+      \name{author}{1}{}{%
+        {{uniquename=0,uniquepart=base,hash=d4064e0ff3f82fd778a1e84c6f2daef5}{%
+           family={Wankat},
+           familyi={W\bibinitperiod},
+           given={PC},
+           giveni={P\bibinitperiod},
+           givenun=0}}%
+      }
+      \list{location}{1}{%
+        {New Jersey}%
+      }
+      \list{publisher}{1}{%
+        {Prentice Hall}%
+      }
+      \strng{namehash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \strng{fullhash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \strng{bibnamehash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \strng{authorbibnamehash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \strng{authornamehash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \strng{authorfullhash}{d4064e0ff3f82fd778a1e84c6f2daef5}
+      \field{sortinit}{W}
+      \field{sortinithash}{ecb89ff85896a47dc313960773ac311d}
+      \field{extradatescope}{labelyear}
+      \field{labeldatesource}{year}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{edition}{3}
+      \field{title}{Separation Process Engineering}
+      \field{year}{2012}
+    \endentry
   \enddatalist
-  \missing{Skogestad}
 \endrefsection
 \endinput
 

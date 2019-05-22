@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  16 MAY 2019 20:07
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (MiKTeX 2.9.6960 64-bit) (preloaded format=pdflatex 2019.2.15)  22 MAY 2019 17:04
 entering extended mode
 **./report.tex
 (report.tex
@@ -1146,20 +1146,13 @@ Package biblatex Info: Automatic encoding selection.
 
 Package biblatex Info: Trying to load bibliographic data...
 Package biblatex Info: ... file 'report.bbl' found.
-(report.bbl
-
-Package biblatex Warning: The following entry could not be found
-(biblatex)                in the database:
-(biblatex)                Skogestad
-(biblatex)                Please verify the spelling and rerun
-(biblatex)                LaTeX afterwards.
-
-)
+(report.bbl)
 Package biblatex Info: Reference section=0 on input line 31.
 Package biblatex Info: Reference segment=0 on input line 31.
 Now handling font encoding TS1 ...
 ... processing UTF-8 mapping file for font encoding TS1
- ("C:\Users\Wian\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
+
+("C:\Users\Wian\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\ts1enc.dfu"
 File: ts1enc.dfu 2018/10/05 v1.2f UTF-8 support for inputenc
    defining Unicode char U+00A2 (decimal 162)
    defining Unicode char U+00A3 (decimal 163)
@@ -1306,24 +1299,39 @@ LaTeX Warning: Reference `sec:Introduction' on page i undefined on input line 3
 \tf@toc=\write7
 \openout7 = `report.toc'.
 
- [5] (report.lof)
+ [5] (report.lof [6]
+Overfull \hbox (5.60963pt too wide) detected at line 33
+ []\OT1/cmr/m/n/12 A.39
+ []
+
+
+Overfull \hbox (5.60963pt too wide) detected at line 34
+ []\OT1/cmr/m/n/12 A.39
+ []
+
+
+Overfull \hbox (5.60963pt too wide) detected at line 35
+ []\OT1/cmr/m/n/12 A.39
+ []
+
+)
 \tf@lof=\write8
 \openout8 = `report.lof'.
 
- [6] (report.lot)
+ [7] (report.lot)
 \tf@lot=\write9
 \openout9 = `report.lot'.
 
- [7]
+ [8]
 No file report.nls.
 ) (Introduction.tex
-<"Figures/VLE Ethanol 2".png, id=260, 473.51906pt x 229.60782pt>
+<"Figures/VLE Ethanol 2".png, id=318, 473.51906pt x 229.60782pt>
 File: "Figures/VLE Ethanol 2".png Graphic file (type png)
 <use "Figures/VLE Ethanol 2".png>
 Package pdftex.def Info: "Figures/VLE Ethanol 2".png  used on input line 11.
 (pdftex.def)             Requested size: 317.07614pt x 153.75235pt.
 ) (Process_Model_Description.tex
-<Figures/Process_PFD.png, id=263, 771.63281pt x 545.03625pt>
+<Figures/Process_PFD.png, id=322, 771.63281pt x 545.03625pt>
 File: Figures/Process_PFD.png Graphic file (type png)
 <use Figures/Process_PFD.png>
 Package pdftex.def Info: Figures/Process_PFD.png  used on input line 9.
@@ -1338,12 +1346,12 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
 (Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 22.
 
 [2 <./Figures/Process_PFD.png>] [3]
-<Figures/Pulse_test_1.png, id=283, 322.20375pt x 210.7875pt>
+<Figures/Pulse_test_1.png, id=346, 322.20375pt x 210.7875pt>
 File: Figures/Pulse_test_1.png Graphic file (type png)
 <use Figures/Pulse_test_1.png>
 Package pdftex.def Info: Figures/Pulse_test_1.png  used on input line 97.
 (pdftex.def)             Requested size: 217.42265pt x 142.24326pt.
-<Figures/Pulse_test_2.png, id=284, 312.41719pt x 211.54031pt>
+<Figures/Pulse_test_2.png, id=347, 312.41719pt x 211.54031pt>
 File: Figures/Pulse_test_2.png Graphic file (type png)
 <use Figures/Pulse_test_2.png>
 Package pdftex.def Info: Figures/Pulse_test_2.png  used on input line 104.
@@ -1354,78 +1362,77 @@ Overfull \hbox (15.1677pt too wide) in paragraph at lines 167--176
  []
 
 [6]) (Controllability_Analysis.tex [7]
-<"Figures/G(s) Singular Values".png, id=335, 399.4925pt x 275.0275pt>
+<"Figures/G(s) Singular Values".png, id=398, 399.4925pt x 275.0275pt>
 File: "Figures/G(s) Singular Values".png Graphic file (type png)
 <use "Figures/G(s) Singular Values".png>
 Package pdftex.def Info: "Figures/G(s) Singular Values".png  used on input line
- 35.
+ 33.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
  [8] [9 <./Figures/G(s) Singular Values.png>] [10] [11]
-<Figures/Poles_and_Zeros.png, id=367, 398.48875pt x 266.9975pt>
+<Figures/Poles_and_Zeros.png, id=432, 398.48875pt x 266.9975pt>
 File: Figures/Poles_and_Zeros.png Graphic file (type png)
 <use Figures/Poles_and_Zeros.png>
 Package pdftex.def Info: Figures/Poles_and_Zeros.png  used on input line 148.
 (pdftex.def)             Requested size: 317.07614pt x 212.45753pt.
  [12]
-<"Figures/RGA Values".png, id=374, 399.4925pt x 275.0275pt>
+<"Figures/RGA Values".png, id=438, 399.4925pt x 275.0275pt>
 File: "Figures/RGA Values".png Graphic file (type png)
 <use "Figures/RGA Values".png>
-Package pdftex.def Info: "Figures/RGA Values".png  used on input line 160.
+Package pdftex.def Info: "Figures/RGA Values".png  used on input line 162.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
  [13 <./Figures/Poles_and_Zeros.png>] [14 <./Figures/RGA Values.png>] [15] [16]
- [17] [18] [19]
-<"Figures/Disturbance Direction".png, id=443, 399.4925pt x 275.0275pt>
+ [17] [18] [19] [20]
+<"Figures/Disturbance Direction".png, id=518, 399.4925pt x 275.0275pt>
 File: "Figures/Disturbance Direction".png Graphic file (type png)
 <use "Figures/Disturbance Direction".png>
 Package pdftex.def Info: "Figures/Disturbance Direction".png  used on input lin
-e 383.
+e 398.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
- [20 <./Figures/Disturbance Direction.png>]
-<"Figures/Disturbance Analysis 1".png, id=456, 399.4925pt x 275.0275pt>
+ [21 <./Figures/Disturbance Direction.png>]
+<"Figures/Disturbance Analysis 1".png, id=530, 399.4925pt x 275.0275pt>
 File: "Figures/Disturbance Analysis 1".png Graphic file (type png)
 <use "Figures/Disturbance Analysis 1".png>
 Package pdftex.def Info: "Figures/Disturbance Analysis 1".png  used on input li
-ne 415.
+ne 430.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
-
-[21 <./Figures/Disturbance Analysis 1.png>]
-<"Figures/Disturbance Analysis 2 Max Norm".png, id=467, 393.47pt x 275.0275pt>
+ [22 <./Figures/Disturbance Analysis 1.png>]
+<"Figures/Disturbance Analysis 2 Max Norm".png, id=541, 393.47pt x 275.0275pt>
 File: "Figures/Disturbance Analysis 2 Max Norm".png Graphic file (type png)
 <use "Figures/Disturbance Analysis 2 Max Norm".png>
 Package pdftex.def Info: "Figures/Disturbance Analysis 2 Max Norm".png  used on
- input line 456.
+ input line 471.
 (pdftex.def)             Requested size: 317.07614pt x 221.62958pt.
- [22 <./Figures/Disturbance Analysis 2 Max Norm.png>]
-<Figures/InputSaturation1.png, id=483, 399.4925pt x 275.0275pt>
+ [23] [24 <./Figures/Disturbance Analysis 2 Max Norm.png>]
+<Figures/InputSaturation1.png, id=563, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation1.png Graphic file (type png)
 <use Figures/InputSaturation1.png>
-Package pdftex.def Info: Figures/InputSaturation1.png  used on input line 482.
+Package pdftex.def Info: Figures/InputSaturation1.png  used on input line 497.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation2.png, id=486, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation2.png, id=566, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation2.png Graphic file (type png)
 <use Figures/InputSaturation2.png>
-Package pdftex.def Info: Figures/InputSaturation2.png  used on input line 489.
+Package pdftex.def Info: Figures/InputSaturation2.png  used on input line 504.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation3.png, id=489, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation3.png, id=569, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation3.png Graphic file (type png)
 <use Figures/InputSaturation3.png>
-Package pdftex.def Info: Figures/InputSaturation3.png  used on input line 499.
+Package pdftex.def Info: Figures/InputSaturation3.png  used on input line 514.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/Input_Requirements.png, id=492, 399.4925pt x 275.0275pt>
+<Figures/Input_Requirements.png, id=572, 399.4925pt x 275.0275pt>
 File: Figures/Input_Requirements.png Graphic file (type png)
 <use Figures/Input_Requirements.png>
-Package pdftex.def Info: Figures/Input_Requirements.png  used on input line 506
+Package pdftex.def Info: Figures/Input_Requirements.png  used on input line 521
 .
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
 
-Underfull \hbox (badness 2409) in paragraph at lines 507--507
+Underfull \hbox (badness 2409) in paragraph at lines 522--522
 [][]|\OT1/cmr/m/n/10.95 The re-quired con-troller in-put
  []
 
-[23 <./Figures/InputSaturation1.png> <./Figures/InputSaturation2.png>] [24 <./F
-igures/InputSaturation3.png> <./Figures/Input_Requirements.png>])
-(Proposed_Changes.tex [25] [26]
-<"Figures/Disturbance Analysis 2 Max Norm_Updated".png, id=535, 399.4925pt x 27
+[25 <./Figures/InputSaturation1.png> <./Figures/InputSaturation2.png> <./Figure
+s/InputSaturation3.png> <./Figures/Input_Requirements.png>] [26])
+(Proposed_Changes.tex [27]
+<"Figures/Disturbance Analysis 2 Max Norm_Updated".png, id=608, 399.4925pt x 27
 5.0275pt>
 File: "Figures/Disturbance Analysis 2 Max Norm_Updated".png Graphic file (type 
 png)
@@ -1433,25 +1440,26 @@ png)
 Package pdftex.def Info: "Figures/Disturbance Analysis 2 Max Norm_Updated".png 
  used on input line 53.
 (pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
-<Figures/InputSaturation1_Updated.png, id=536, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation1_Updated.png, id=609, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation1_Updated.png Graphic file (type png)
 <use Figures/InputSaturation1_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation1_Updated.png  used on input li
 ne 62.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation2_Updated.png, id=539, 399.4925pt x 275.0275pt>
+<Figures/InputSaturation2_Updated.png, id=612, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation2_Updated.png Graphic file (type png)
 <use Figures/InputSaturation2_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation2_Updated.png  used on input li
 ne 69.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/InputSaturation3_Updated.png, id=542, 399.4925pt x 275.0275pt>
+ [28 <./Figures/Disturbance Analysis 2 Max Norm_Updated.png>]
+<Figures/InputSaturation3_Updated.png, id=622, 399.4925pt x 275.0275pt>
 File: Figures/InputSaturation3_Updated.png Graphic file (type png)
 <use Figures/InputSaturation3_Updated.png>
 Package pdftex.def Info: Figures/InputSaturation3_Updated.png  used on input li
 ne 79.
 (pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
-<Figures/Input_Requirements_Updated.png, id=545, 399.4925pt x 275.0275pt>
+<Figures/Input_Requirements_Updated.png, id=625, 399.4925pt x 275.0275pt>
 File: Figures/Input_Requirements_Updated.png Graphic file (type png)
 <use Figures/Input_Requirements_Updated.png>
 Package pdftex.def Info: Figures/Input_Requirements_Updated.png  used on input 
@@ -1462,39 +1470,139 @@ Underfull \hbox (badness 2409) in paragraph at lines 87--87
 [][]|\OT1/cmr/m/n/10.95 The re-quired con-troller in-put
  []
 
-) [27 <./Figures/Disturbance Analysis 2 Max Norm_Updated.png> <./Figures/InputS
-aturation1_Updated.png> <./Figures/InputSaturation2_Updated.png>]
-(Uncertainty.tex)
+) (Uncertainty.tex [29 <./Figures/InputSaturation1_Updated.png> <./Figures/Inpu
+tSaturation2_Updated.png> <./Figures/InputSaturation3_Updated.png> <./Figures/I
+nput_Requirements_Updated.png>] [30]
+<Figures/Uncertainty_Additive_vs_Multiplicative.png, id=654, 399.4925pt x 275.0
+275pt>
+File: Figures/Uncertainty_Additive_vs_Multiplicative.png Graphic file (type png
+)
+<use Figures/Uncertainty_Additive_vs_Multiplicative.png>
+Package pdftex.def Info: Figures/Uncertainty_Additive_vs_Multiplicative.png  us
+ed on input line 42.
+(pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
+ [31 <./Figures/Uncertainty_Additive_vs_Multiplicative.png>] [32]
+<Figures/Uncertainty_wI_11.png, id=671, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_11.png Graphic file (type png)
+<use Figures/Uncertainty_wI_11.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_11.png  used on input line 104.
+
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_13.png, id=672, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_13.png Graphic file (type png)
+<use Figures/Uncertainty_wI_13.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_13.png  used on input line 111.
+
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+ [33 <./Figures/Uncertainty_wI_11.png> <./Figures/Uncertainty_wI_13.png>]
+<Figures/Uncertainty_wI_33.png, id=681, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_33.png Graphic file (type png)
+<use Figures/Uncertainty_wI_33.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_33.png  used on input line 129.
+
+(pdftex.def)             Requested size: 317.07614pt x 218.2975pt.
+ [34 <./Figures/Uncertainty_wI_33.png>]
+<Figures/Uncertainty_wI_Gd12.png, id=692, 399.4925pt x 276.03125pt>
+File: Figures/Uncertainty_wI_Gd12.png Graphic file (type png)
+<use Figures/Uncertainty_wI_Gd12.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_Gd12.png  used on input line 17
+1.
+(pdftex.def)             Requested size: 217.42265pt x 150.22977pt.
+<Figures/Uncertainty_wI_Gd22.png, id=693, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_Gd22.png Graphic file (type png)
+<use Figures/Uncertainty_wI_Gd22.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_Gd22.png  used on input line 17
+8.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+) (Performance.tex
+[35 <./Figures/Uncertainty_wI_Gd12.png> <./Figures/Uncertainty_wI_Gd22.png>])
+[36]
 
 Package biblatex Warning: Name format 'last-first' deprecated.
 (biblatex)                Please use 'family-given' instead.
 (biblatex)                Using 'family-given' now.
 
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 49.
-[28 <./Figures/InputSaturation3_Updated.png> <./Figures/Input_Requirements_Upda
-ted.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 49.
- (report.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 49.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 49.
+
+Overfull \hbox (10.05118pt too wide) in paragraph at lines 48--48
+[][]\OT1/cmr/m/n/12 Green, GW and Perry, RH (2007) \OT1/cmr/m/it/12 Perry's Che
+m-i-cal En-gi-neer's Hand-book\OT1/cmr/m/n/12 , 8th ed. MacGraw-
+ []
+
+[37] (Appendix.tex
+File: Figures/Uncertainty_wI_11.png Graphic file (type png)
+<use Figures/Uncertainty_wI_11.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_11.png  used on input line 9.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_12.png, id=719, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_12.png Graphic file (type png)
+<use Figures/Uncertainty_wI_12.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_12.png  used on input line 15.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+File: Figures/Uncertainty_wI_13.png Graphic file (type png)
+<use Figures/Uncertainty_wI_13.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_13.png  used on input line 24.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_21.png, id=720, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_21.png Graphic file (type png)
+<use Figures/Uncertainty_wI_21.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_21.png  used on input line 30.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_22.png, id=721, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_22.png Graphic file (type png)
+<use Figures/Uncertainty_wI_22.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_22.png  used on input line 39.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_23.png, id=722, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_23.png Graphic file (type png)
+<use Figures/Uncertainty_wI_23.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_23.png  used on input line 45.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_31.png, id=723, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_31.png Graphic file (type png)
+<use Figures/Uncertainty_wI_31.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_31.png  used on input line 54.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+<Figures/Uncertainty_wI_32.png, id=724, 399.4925pt x 275.0275pt>
+File: Figures/Uncertainty_wI_32.png Graphic file (type png)
+<use Figures/Uncertainty_wI_32.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_32.png  used on input line 60.
+(pdftex.def)             Requested size: 217.42265pt x 149.68347pt.
+ [38 <./Figures/Uncertainty_wI_12.png> <./Figures/Uncertainty_wI_21.png> <./Fig
+ures/Uncertainty_wI_22.png> <./Figures/Uncertainty_wI_23.png>]
+File: Figures/Uncertainty_wI_33.png Graphic file (type png)
+<use Figures/Uncertainty_wI_33.png>
+Package pdftex.def Info: Figures/Uncertainty_wI_33.png  used on input line 67.
+(pdftex.def)             Requested size: 362.37569pt x 249.48645pt.
+)
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 55.
+ [39 <./Figures/Uncertainty_wI_31.png> <./Figures/Uncertainty_wI_32.png>]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 55.
+
+(report.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 55.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 55.
 Package rerunfilecheck Info: File `report.out' has not changed.
-(rerunfilecheck)             Checksum: 9DD33B974908D5C765E30EE867859F69;2330.
+(rerunfilecheck)             Checksum: 1ECF5D3CA3A0D45D0426EB835F28FE88;2596.
 
 
 LaTeX Warning: There were undefined references.
+
+
+Package biblatex Warning: Please rerun LaTeX.
+(biblatex)                Page breaks have changed.
 
 Package logreq Info: Writing requests to 'report.run.xml'.
 \openout1 = `report.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 30161 strings out of 492946
- 566192 string characters out of 3126710
- 1001981 words of memory out of 3000000
- 33549 multiletter control sequences out of 15000+200000
+ 30311 strings out of 492946
+ 569717 string characters out of 3126710
+ 1004330 words of memory out of 3000000
+ 33628 multiletter control sequences out of 15000+200000
  544422 words of font info for 69 fonts, out of 3000000 for 9000
  1141 hyphenation exceptions out of 8191
- 48i,16n,77p,1133b,1398s stack positions out of 5000i,500n,10000p,200000b,50000s
+ 48i,16n,77p,1133b,1399s stack positions out of 5000i,500n,10000p,200000b,50000s
 <C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmbx10.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/cm/cmbx12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/font
@@ -1514,9 +1622,9 @@ ta/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users
 b><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/
 cm/cmti12.pfb><C:/Users/Wian/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/publ
 ic/amsfonts/symbols/msam10.pfb>
-Output written on report.pdf (35 pages, 641685 bytes).
+Output written on report.pdf (47 pages, 838119 bytes).
 PDF statistics:
- 645 PDF objects out of 1000 (max. 8388607)
- 156 named destinations out of 1000 (max. 500000)
- 344 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 835 PDF objects out of 1000 (max. 8388607)
+ 209 named destinations out of 1000 (max. 500000)
+ 436 words of extra memory for PDF output out of 10000 (max. 10000000)
 

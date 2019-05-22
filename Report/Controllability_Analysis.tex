@@ -11,11 +11,9 @@ The method used is described in \textcite{skogestad}.
 
 \subsection{Minimal Realisation of the System}
 
-The system written in the transfer function notation is in no danger of not being a minimal realizable system. It is only when the system is converted to state space notation it runs the risk of not being a minimal realization. 
+The system written in the transfer function notation is in no danger of not being a minimal realizable system. It is only when the system is converted to state space notation that it runs the risk of not being a minimal realization. 
 
-When converting the transfer function model to a state space realisation of the system, it has to be noted that all dead time that is inherent to the system is ignored, as state space realizations cannot deal with dead time. The system was however converted to its state space realization, in order to cross check the calculated poles and zeros of the system.
-
-The minimum state space realization of the system is given below.
+When converting the transfer function model to a state space realisation of the system, it has to be noted that all dead time that is inherent to the system is ignored, as state space realizations cannot deal with dead time. The system was therefore never converted into its state space counterpart, as there are other techniques for calculating the system poles and zeros from Laplace domain notation.
 
 \subsection{Functional Controllability}
 
@@ -26,7 +24,7 @@ The system has to be checked for functional controllability. This implies that o
 	\item The rank of $G(s)$ should be greater than the number of outputs.
 \end{enumerate} 
 
-For consideration 1, mentioned above, the number of inputs and outputs in the system is equal. This criteria is therefore satisfied by the system.
+For consideration 1, mentioned above, the number of inputs and outputs in the system are equal. This criteria is therefore satisfied by the system.
 
 For consideration 2, the minimum singular value (or $\underline{\sigma}$) of $G(j\omega)$ should be non-zero. In order to determine whether the system satisfies this criteria, all the singular values, of all the outputs were computed of a wide frequency range. A bode diagram displaying the result can be seem in Figure~\ref{fig:gs-singular-values}.
 
@@ -37,13 +35,13 @@ For consideration 2, the minimum singular value (or $\underline{\sigma}$) of $G(
 	\label{fig:gs-singular-values}
 \end{figure}
 
-As is clear from Figure~\ref{fig:gs-singular-values}, $\underline{\omega}$ never reaches zero, although it does approach zero as the frequency goes to infinity. 
+As is clear from Figure~\ref{fig:gs-singular-values}, $\underline{\sigma}$ never reaches zero, although it does approach zero as the frequency goes to infinity. 
 
 Based on the above information, it can be concluded that the system is indeed functionally controllable. This implies that the system's rank is equal to the amount of outputs that the system has.
 
 The current selected inputs and outputs can therefore be controlled with adequate independence. This further implies that outputs can return a response by some combination of the input variables.
 
-A system that is functionally uncontrollable will have output responses remaining zero, whenever any combination of an input step function is applied to the system. This therefore results in an output that can in no way be controlled by the inputs, as the inputs do not effect the outputs at all.
+A system that is functionally uncontrollable will have output responses remaining zero, whenever any combination of an input step function is applied to the system. This therefore results in an output that can in no way be controlled by the inputs, as the inputs do not effect the outputs at all. This however is not the case with the system being investigated.
 
 \subsection{System Poles}
 \label{sec:System Poles}
@@ -70,7 +68,7 @@ The poles of the system was calculated. The system has a total  number of 25 pol
 \subsubsection{Calculating the System Pole Directions}
 \label{sec:Pole Directions}
 
-The pole directions of the system was calculated by substituting the relevant pole values into $G(s)$ and calculating the input and output directions poles. This was only done for the poles occurring in the Right Hand Plane (RHP). The calculated pole directions are listed in Table~\ref{tab: Pole Directions of system}.
+The pole directions of the system was calculated by substituting the relevant pole values into $G(s)$ and calculating the input and output directions from the singular value decomposition. This was only done for the poles occurring in the Right Hand Plane (RHP). The calculated pole directions are listed in Table~\ref{tab: Pole Directions of system}. Table~\ref{tab: Pole Directions of system Phasor Notation} displays the same pole values in a more convenient notation (phasor notation). Using this notation the magnitude and phase shift of the input and output directions can be analysed for the specific pole frequency.
 
 \begin{table}[H]
 	\centering
@@ -99,15 +97,17 @@ The pole directions of the system was calculated by substituting the relevant po
 
 \subsubsection{Discussion of System Poles}
 
-Most of the calculated system poles are in the open left hand plane (LHP). There is however one pair of complex poles that lie in the open RHP. These poles will cause instability when they are approached. To gain better understanding into the what causes the system to behave in this way, the pole directions were calculated in Section~\ref{sec:Pole Directions}. 
+Most of the calculated system poles are in the open left hand plane (LHP). There is one pair of complex poles that lie in the open RHP. These poles will cause instability when they are approached. To gain better understanding into the what causes the system to behave in this way, the pole directions were calculated in Section~\ref{sec:Pole Directions}. 
 
-Using Table~\ref{tab: Pole Directions of system Phasor Notation} as reference the directions of the system in this unstable condition can be analysed. From the table it is clear that the unstable response exists whenever the variable $y_2$ (side stream composition) is increased by almost one unit. This cannot be done without effecting the output $y_1$, as it is increase by almost a third of a unit during this response. Only the temperature can remain relatively unaffected during the response. We also note that $y_1$ and $y_2$ are in phase with one another, while$y_3$ is out of phase the first two outputs.
+Using Table~\ref{tab: Pole Directions of system Phasor Notation} as reference, the directions of the system in this unstable condition can be analysed. From the table it is clear that the unstable response exists whenever the variable $y_2$ (side stream composition) is increased by almost one unit. This cannot be done without effecting the output $y_1$, as it is increased by almost a third of a unit during this response. Only the temperature can remain relatively unaffected during the response. We also note that $y_1$ and $y_2$ are in phase with one another, while $y_3$ is out of phase with the first two outputs.
 
-Looking at the input directions in Table~\ref{tab: Pole Directions of system Phasor Notation}, it is clear that the described output is obtained from manipulation of $u_1$ and $u_2$. While $u_3$ is manipulated slightly, its amplitude is well below the amplitude of the other system inputs. We can therefore generalize and say that the pole exists when reflux flow rate is increased and side stream draw off flow rate is decreased by the same amount. One small thing to note, is that the input $u_1$ does not have a phasor notation, as it is not a complex variable.
+Looking at the input directions in Table~\ref{tab: Pole Directions of system Phasor Notation}, it is clear that the described output is obtained from manipulation of $u_1$ and $u_2$. While $u_3$ is manipulated slightly, its amplitude is well below the amplitude of the other system inputs. We can therefore generalize and say that the pole exists when reflux flow rate is increased and the side stream draw off flow rate is decreased by the same amount. One small thing to note is that the input $u_1$ does not have a phasor notation, as it is not a complex variable.
 
-From the above it is clear, that the side stream composition cannot stepped one unit by manipulating the side stream flow rate and reflux flow rate exclusively. This composition will have to be controlled other combinations of measured variable, for the system to remain stable.
+From the above it is clear, that the side stream composition cannot be stepped one unit by manipulating the side stream flow rate and reflux flow rate exclusively. This step response in composition will have to be obtained from other combinations of measured variables for the system to remain stable.
 
-From a production point of view, this will not likely pose to be problem, as it is not a scenario that is very likely to exist. As mentioned earlier, the main ethanol product is in the distillate of the column. The shift described by this pole, will decrease both the distillate and side stream flow rates, resulting in a plummeting production profit as the product streams are redirected to waste or downstream processing (the bottoms flow).
+From a production point of view, this will not likely pose to be problem, as it is not a scenario that is very likely to exist. As mentioned earlier, the main ethanol product is in the distillate of the column. The shift described by this pole, will decrease both the distillate and side stream flow rates, resulting in a plummeting production profit as the product streams are redirected to waste or downstream processing (the bottoms flow). Special care should therefore be taken when designing the controller algorithm to steer clean from this control scenario.
+
+An easier, more intuitive, way to obtain the same results (of adjusting the composition of the side stream) will be to only manipulate the side stream flow rate while increasing the temperature of the bottom plate. This will leave the production flow rate of the distillate relatively unaltered, while side stream flow rate will be sacrificed for composition. Note that this result can easily be obtained by using a decentralized controller.
  
 
 \subsection{System Zeros}
@@ -139,7 +139,7 @@ Since all zeros are in the LHP, and will in no way cause limitations on the band
 
 \subsubsection{Discussion of System Zeros}
 
-The system zeros exists for values of $s$ where the system $G(s)$ loses rank. The zeros calculated, are transmission zeros of the system as they do not relate to the zeros of the elements that make up the transfer function matrix $G(s)$. It is clear that there are no RHP zeros, and no further analysis of the zeros are required, as there are no limitations imposed by Left Hand Plane (LHP) zeros. 
+The system zeros exists for values of $s$ where the system $G(s)$ loses rank. The zeros calculated, are transmission zeros of the system as they do not relate to the zeros of the elements that make up the transfer function matrix $G(s)$. It is clear that there are no RHP zeros, and no further analysis of the zeros is required, as there are no limitations imposed by Left Hand Plane (LHP) zeros. 
 
 LHP zeros will mostly cause high overshoots during control, but this does not pose as a stability concern for the system and will in no way limit the bandwidth of the system.
 
@@ -153,7 +153,9 @@ LHP zeros will mostly cause high overshoots during control, but this does not po
 \subsection{RGA Values of the System}
 \label{sec:RGA Calculation}
 
-The Routh Gain Array (RGA) of $G(j\omega)$ was calculated, for all values of $\omega$, where the frequency domain analysis held stable. This enables the analysis of RGA values not only for at the crossover frequencies, but at all other frequencies to thoroughly check for large RGA elements that will render a plant that is difficult to control. Due to dead time in the system, the frequency response of the RGA calculation tends to become severely unstable at higher frequencies. Luckily, spikes in the response will always tend to go downward, and the maximum RGA values can still be calculated. The calculated RGA analysis can be seen in Figure~\ref{fig:rga-values}.
+The Routh Gain Array (RGA) of $G(j\omega)$ was calculated, for all values of $\omega$, where the frequency domain analysis held stable. This enables the analysis of RGA values not only at the crossover frequencies, but at all other frequencies to thoroughly check for large RGA elements that will render a plant that is difficult to control. Due to dead time in the system, the frequency response of the RGA calculation tends to become severely unstable at higher frequencies. Luckily, spikes in the response will always tend to go downward, and the maximum RGA values can still be calculated. 
+
+The frequency at which RGA analysis breaks down is $\omega = 0.2$. Al that can be said about this it that the correct functioning of a decentralized controller cannot be predicted above this frequency. This is due to the effects that multiple delays have on the system. The calculated RGA values can be seen in Figure~\ref{fig:rga-values}.
 
 \begin{figure}[H]
 	\centering
@@ -184,7 +186,7 @@ To verify that the off-diagonal values remain within acceptable ranges, the RGA 
 
 \subsubsection{The Minimum Singular Value and Set-point Tracking}
 
-The minimum singular value is a useful tool when doing controllability an analysis. The minimum singular value for this system is depicted in Figure~\ref{fig:gs-singular-values}.
+The minimum singular value is a useful tool when doing a controllability analysis. The minimum singular value for this system is depicted in Figure~\ref{fig:gs-singular-values}.
 
 The minimum singular value should be as large as possible, especially at frequencies where control is needed \parencite{skogestad}.
 
@@ -207,15 +209,15 @@ This is bad from a controllability point of view, especially when considering se
 	\end{bmatrix}
 \end{equation} 
 
-With the current plant configuration and design, the use of a decentralized controller is possible, but adequate set-point tracking will not be possible as the outputs will not reach the set-points on the high and/or low set-point values.
+With the current plant configuration and design, the use of a decentralized controller is possible, but acceptable set-point tracking will not be possible as the outputs will not reach the set-points on the high and/or low set-point values.
 
-For example; when the temperature on tray \# 19 , $y_3$, is controlled between 88 and 96~$\celsius$, set-point tracking by manipulation of the stream feed pressure, $u_3$, will be acceptable (when considering a decentralized controller that contains an integral component). Acceptable set-point tracking includes: fast response time, elimination of error, robust responses. An adequately fast response time for this system will be around 45 minutes. With a high enough gain value, $K_{c3}$, this will be achieved. The integral component of the controller will eliminate the error completely over time, given that the integral component of the controller, $\tau_{c3}$, is large enough. Robust control will be achieved by tuning the controller values after initial implementation.
+For example; when the temperature on tray \# 19 , $y_3$, is controlled between 88 and 96~$\celsius$, set-point tracking by manipulation of the stream feed pressure, $u_3$, will be acceptable (when considering a decentralized controller that contains an integral component). Acceptable set-point tracking includes: fast response time, elimination of error, and robust responses. An adequately fast response time for this system will be around 45 minutes. With a high enough gain value, $K_{c3}$, this will be achieved. The integral component of the controller will eliminate the error completely over time, given that the integral component of the controller, $\tau_{c3}$, is large enough. Robust control will be achieved by tuning the controller values after initial implementation.
 
-Now, when considering set-points on the outer limits of the control range for $y_3$, the control system will not perform acceptably. For instance when the set-point of $y_3$ is set to ranges 84 to 88 $\celsius$ or 96 to 100 $\celsius$, the response time of the set-point change may still be good, but the error will not be able to be cancelled. This is due to the minimum singular value of the system being smaller than 1. The unit change in the input, $u_3$, will not cause a unit change in the output, $y_3$. Since the system is scaled, this simply means that the outer set-points cannot be reached by only manipulating one input variable. 
+Now, when considering set-points on the outer limits of the control range for $y_3$, the control system will not perform acceptably. For instance when the set-point of $y_3$ is set to ranges 84 to 88 $\celsius$ or 96 to 100 $\celsius$, the response time of the set-point change may still be good, but the error will not be able to be cancelled. This is due to the minimum singular value of the system being smaller than 1. The unit change in the input, $u_3$, will not cause a unit change in the output, $y_3$. Since the system is scaled, this simply means that the outer set-points cannot be reached by manipulating one set of input variables (with different magnitudes and directions). 
 
 The situation discussed above, only applies to the $y_3$ and $u_3$ control pairing. From Figure~\ref{fig:gs-singular-values}, it is clear that the criteria stated in Equation~\ref{eq: Min singular alue criteria} is satisfied for the $y_2$ and $u_2$ paring for all frequencies where $\omega<0.28$. Similarly, the criteria in Equation~\ref{eq: Min singular alue criteria} is satisfied in the $y_1$ and $u_1$ pairing for all frequencies where $\omega < 2.97$.
 
-The are a few options for improvement and successful implementation of the control system. They are
+There are a few options for improvement and successful implementation of the control system. They are
 
 \begin{enumerate}
 	\item To implement a controller that is not decentralised. This controller can still control $y_1$ an $y_2$ using $u_1$ and $u_2$. $y_3$ will then be controlled by a combination of $u_3$ and $u_2$ (this follows from the RGA matrix analysis, where $u_1$ is negative with regard to $y_3$). The controller equation will then take the form of
@@ -238,7 +240,7 @@ More insight into the problem is gained when the different singular value direct
 
 \subsubsection{Singular Value Directions}
 
-The directions of the singular values are used to gain better understanding into how the three outputs are responsible for the overall system gain. The directions are calculate at both low and higher frequencies to analyse the behaviour at a wide range of frequencies. The two frequencies selected are $\omega = 0$ for low frequncies (or steady state values), and $\omega = 1$, which is the frequency at which the delays in the system causes the singular value to oscillate. The SVD for the low gain value is calculated as
+The directions of the singular values are used to gain better understanding into how the three outputs are responsible for the overall system gain. The directions are calculated at both low and high frequencies to analyse the behaviour across a wide range of frequencies. The two frequencies selected are $\omega = 0$ for low frequncies (or steady state conditions), and $\omega = 1$, which is the frequency at which the delays in the system causes the singular value to oscillate. The SVD for the low gain value is calculated as
 
 \begin{equation}
 	G(0) = 
@@ -294,15 +296,27 @@ U(G(1j)) =
 		\end{bmatrix}
 \end{equation}
 
-\subsection{System Bandwidth}
+From the above it is clear that
 
-The bandwidth of the system is the maximum frequency where sensible control can still be implemented. Mathematically it is where the sensitivity function of the system first crosses $1/\sqrt{2}$, or
+\begin{enumerate}
+	\item The high process gain at low frequencies is achieved by manipulation of variables $u_1$ and $u_2$ in opposite directions. This does check out with the process (when considering steady state conditions), as changing the reflux and side stream flow rates will most definitely cause the greatest upset to the process. It is clear that $y_2$ will be most effected by this input direction, while $y_1$ will be moderately effected. As is also expected, $y_3$ will remain relatively unchanged, as the changes in reflux and side stream flow rates will not greatly effect the bottoms flow rate (and therefore the temperature on the bottom tray).
+	\item  Moving to high frequencies the exact same phenomenon is seen as described in the point above. The magnitude of input and output directions are nearly identical. Interestingly enough the inputs causing the high gain are slightly out of phase, but where outputs $y_1$ and $y_2$ are severely out of phase with one another. The output direction also points more to the direction of $y_2$ as the frequency is increased.
+	\item The low process gain at low and high frequencies is caused by an input of all three input variables in the same direction (at higher frequencies the variables are neatly space out i.t.o their phases). The variables have varying magnitudes, but the magnitude of $u_3$ is clearly the biggest in both scenarios. When analysing the output directions, it is clear that the low gain condition is achieved when $y_3$ is manipulated while keeping the other two output variables constant. This is also the case for both low and high frequency low gain conditions. The outputs in the low gain condition are in phase with one another.
+	\item There is no big change in the directions of the inputs and outputs between the low and high frequencies. This is beneficial for control, as shifts in the input variables will deliver consistent results with regard to high and low overall process gains.
+	\item To generalize, high overall gains are obtained when adjusting variables $u_1$ and $u_2$ simultaneously, in order to change variable $y_2$. This should be compared to the RHP pole calculated in Section~\ref{sec:Pole Directions}. It is clear that the RHP pole is obtained when the process is shifted to reach its highest possible overall gain. This is not ideal, as we would like to utilize the high gain directions to speed up response times and increase performance. In this case performance will have to be sacrificed to obtain stable responses. Inputs that are in phase seem to favour high gain conditions, while outputs that are in phase tend to favour low gain condition. The low gain condition involves the change of temperature in the column. 
+	
+\end{enumerate}
+
+\subsection{System Bandwidth}
+\label{sec:Bandwidths}
+
+The bandwidth of the system is the maximum frequency where sensible control can still be implemented. Mathematically it is where the sensitivity function of the system first crosses $\frac{1}/{\sqrt{2}}$, or
 
 \begin{equation}
 	|S(j\omega)| = \frac{1}{\sqrt{2}}
 \end{equation}
 
-Since no controller is implemented as yet, there is no way of calculating the sensitivity function. As discussed in Section~\ref{sec:System Poles} and Section~\ref{sec:System Zeros}, there are no Right Hand Plane (RHP) zeros in this system. There are two RHP poles present, that will impose limitation on the on the system. The limitation imposed on the system are
+Since no controller is implemented as yet, there is no way of calculating the sensitivity function. As discussed in Section~\ref{sec:System Poles} and Section~\ref{sec:System Zeros}, there are no Right Hand Plane (RHP) zeros in this system, and therefore there is no bandwidth limitations imposed by zeros. There are two RHP poles present, that will impose limitatiosn on the system. The limitatios imposed on the system include
 
 \begin{enumerate}
 	\item Limitations on the input usage. This constrains the amount of gain that can be applied to the system with a controller. In general
@@ -312,7 +326,7 @@ Since no controller is implemented as yet, there is no way of calculating the se
 	\end{equation}
 	This is not entirely relevant to this report, as it entails the implementation of a controller. While this upper bound may be useful to assist with the design of the controller, the main focus of this report will remain on the controllability of the system.
 	
-	\item Limitations on the bandwidth. In short, the system has to react fast enough to avoid running into stability problems. The RHP pole therefore gives a minimum bound on the bandwidth (unlike RHP-zeros, which impose maximum bound constraints). According to \textcite{skogestad} the minimum closed loop bandwidth is 
+	\item Limitations on the bandwidth. In short, the system has to react fast enough to avoid running into stability problems. The RHP pole therefore gives a maximum bound on the bandwidth. According to \textcite{skogestad} the minimum closed loop bandwidth is 
 	
 	\begin{equation}
 		\omega_B \geq 2|p|
@@ -358,19 +372,20 @@ While these limitations are in no way ideal, they do not pose to be a major thre
 
 \begin{enumerate}
 	\item When looking at Equation~\ref{eq:Deadtime Matrix} together with Section~\ref{sec:RGA Calculation}, it is clear that the diagonal elements that are paired in the RGA matrix, also contain the least amount of dead time. This is good, as it is obvious that you want to control a variable with an input that does not take long to effect the variable. Pairing of the variables are therefore made relatively straight forward.
-	\item The delays imposed are not that significant when considering the desired response times for the control system. Required response times for the variables of the distillation column range between 30 and 60 minutes. The maximum delay calculated here (3 minutes), is relatively small and a low gain controller should be able to control the system with adequate performance. The performance of the system is discussed in more detail later in the report.
+	\item The delays imposed are not that significant when considering the desired response times for the control system. Required response times for the variables of the distillation column range between 30 and 60 minutes. The maximum delay calculated here (3 minutes), is relatively small and a low gain controller should be able to control the system with adequate performance. The performance of the system is discussed in more detail later in the report (Section~\ref{sec:Performance Measurement}).
 	\item Controlled variables $y_1$ and $y_2$ are more constrained by the RHP pole that exist than the delay that is inherent to these variables. Only $y_3$ is limited by the delay of the response. This is expected as the pole clearly influences $y_1$ and $y_2$ the most (Table~\ref{tab: Pole Directions of system}). $y_3$ also has the least amount of dead time, shortening the period wherein reasonable control can be expected.
 \end{enumerate}
 
 \subsection{Disturbance Rejection}
-
-In order for the system to successfully reject disturbances, tight control and large bandwidths are required to when disturbances are large or "fast". 
+\label{sec:Disturbance Rejection Analysis}
+In order for the system to successfully reject disturbances, tight control and large bandwidths are required to reject disturbances when disturbances are large or "fast". 
 
 To evaluate a MIMO system's ability to reject disturbances, the disturbance directions have to be evaluated (which is not the case when considering a SISO system). 
 
 The model contains two disturbances, each having it's own associated direction. The disturbance directions are defined as
 
 \begin{equation}
+	\label{eq:gd equation}
 	y_d = \frac{1}{||g_d||_2}g_d
 \end{equation}
 
@@ -393,7 +408,7 @@ Now, following that the system has been scaled (Section~\ref{sec:Scaling}), we c
 
 Note that $S(s)$ could not actually be calculated. This is because no controller has yet been designed for the system. To gain better understanding of the disturbances in the system, a proportional decentralized controller with a gain of 1 (for all elemnts) was used.
 
-\textcite{skogestad} used the above and derived tight bounds on the sensitivity function and loop gain for MIMO syste, considering the disturbance directions as well. For the system to adequately reject disturbances, we at least require that 
+\textcite{skogestad} used the above and derived tight bounds on the sensitivity function and loop gain for MIMO system, considering the disturbance directions as well. For the system to adequately reject disturbances, we at least require that 
 
 \begin{equation}
 	\label{eq: Disturbance Criteria 1}
@@ -509,10 +524,10 @@ Input saturation is therefore unavoidable. This does not necessarily mean that t
 	\end{minipage}
 \end{figure}
 
-When considering Figure~\ref{fig:Input Saturation 1}, it is clear that the input into the controller (controlling $y_1$) is saturated at low frequencies. This is due to the effects that $d_1$ has on the system. It is clear that a maximum change in the feed flow rate, will result in the reflux flow rate flow being saturated. This translates to a fully open or fully closed control valve in this section of the plant. There are two solutions to the problem, namely
+When considering Figure~\ref{fig:Input Saturation 1}, it is clear that the input into the controller (controlling $y_1$) is saturated at low frequencies. This is due to the effects that $d_1$ has on the system. It is clear that a maximum change in the feed flow rate, will result in the reflux flow rate being saturated. This translates to a fully open or fully closed control valve in this section of the plant. There are two solutions to the problem, namely
 
 \begin{enumerate}
-	\item Install a bigger control valve (and therefore line size) on the reflux stream. This change will impact the mathematical model by changing the gain and response times in the first row of transfer function matrix $G(s)$. This speed up the dynamics of the system, and result in higher minimum singular values for $S(s)$, especially at low frequencies where the problem is experienced. Better disturbance rejection will result.
+	\item Install a bigger control valve (and therefore line size) on the reflux stream. This change will impact the mathematical model by changing the gain and response times in the first row of transfer function matrix $G(s)$. This will speed up the dynamics of the system, and result in higher minimum singular values for $S(s)$, especially at low frequencies where the problem is experienced. Better disturbance rejection will result.
 	
 	\item Lower the maximum designed for disturbance size. This can be done by tighter control upstream from the distillation column (by the flow regulator/controller indicated in Figure~\ref{fig:PFD}).
 	

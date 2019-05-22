@@ -1,5 +1,5 @@
 \section{Process Model Description}
-
+\label{sec:Process Model Description}
 \subsection{System Diagram}
 
 The Process Flow Diagram of the system, with all the relevant inputs, outputs and disturbances are displayed in Figure~\ref{fig:PFD}.
@@ -74,7 +74,7 @@ All variables in the ethanol water distillation coloumn system is summarised in 
 
 \subsection{System Model}
 
-The model was determined by conducting pulse testing on the system. In most cases a first order plus dead time model gave a sufficiently accurate fit to experimental data. The sum of squares of an adequate fit during model development was a values of greater than 0.98. In some relationships more complex dynamics had to be derived and a second order system with a first order lag and dead time, was used to accurately describe the impulse response (based on the same adequate fit method described above). The equations used for fitting were
+The model was determined by conducting step testing on the system. In most cases a first order plus dead time model gave a sufficiently accurate fit to experimental data. The sum of squares of an adequate fit during model development was a values of greater than 0.98 \parencite{ogun}. In some relationships more complex dynamics had to be derived and a second order system with a first order lag and dead time, was used to accurately describe the impulse response (based on the same adequate fit method described above). The equations used for fitting were
 
 \begin{equation}
 	\frac{y_i(s)}{u_i(s)} = \frac{K_i e^{-\theta_is}}{\tau_i s + 1}
@@ -88,7 +88,7 @@ for the first order plus dead time system, and
 
 for the relationships with more complex dynamics.
 
-The fitting curves of two pulse tests are displayed in Figure~\ref{fig:test1} and Figure~\ref{fig:test2}. An important thing to note is that the unit of time is minutes, an therefore all responses and analysis will be conducted with this unit for time.
+The fitting curves of two pulse tests are displayed in Figure~\ref{fig:test1} and Figure~\ref{fig:test2}. An important thing to note is that the unit of time is minutes, and therefore all responses and analysis will be conducted with this unit for time.
 
 \begin{figure}[htbp]
 	\centering
@@ -221,7 +221,7 @@ r = \begin{bmatrix}
 \end{bmatrix}
 \end{equation}
 
-Using the above matrices, the scaled system can be calculated using the following equations from [REF!!!],
+Using the above matrices, the scaled system can be calculated using the following equations from \textcite{skogestad},
 
 \begin{equation}
 	\label{eq: Scaling 1}
