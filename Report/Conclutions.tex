@@ -1,0 +1,20 @@
+\section{Conclusions}
+
+Following the controllability analysis performed it can be stated that
+
+\begin{enumerate}
+	\item The process contains good controllability characteristics. The bandwidth limitations on the process are reasonable, and will allow for the implementation of a controller.
+	\item The bounds set on disturbance variation were too ambitious, and the process may not be able to reject disturbances with magnitude close to the upper or lower bounds.
+	\item The bounds set on maximum set-point variation also appeared to be too ambitious. Especially the maximum set-point variation of 8~$\celsius$ on the bottom tray temperature will not be realizable in the system.
+	\item The unstable nodes in the MIMO system were calculated and analysed successfully.
+	\item An acceptable uncertainty model was constructed to describe the various uncertainties within the model.
+	\item A performance weight was constructed to measure the nominal and robust performance of the process once the controller design has begun.
+\end{enumerate}
+
+Recommendations and processes that will have to follow are
+
+\begin{enumerate}
+	\item The controller for the process will have to be designed, using various methods (decentralized, $H^\infty$-design).
+	\item When a controller transfer function has been designed, the nominal and robust stability and performance of the process has to be verified.
+	\item After the analysis and design, the implementation of the controller can commence.
+\end{enumerate}

@@ -8,29 +8,30 @@
 \contentsline {subsection}{\numberline {2.4}System Variables}{3}{subsection.2.4}% 
 \contentsline {subsection}{\numberline {2.5}System Model}{4}{subsection.2.5}% 
 \contentsline {subsection}{\numberline {2.6}Scaling the System}{5}{subsection.2.6}% 
-\contentsline {section}{\numberline {3}Controllability Analysis}{7}{section.3}% 
+\contentsline {section}{\numberline {3}Controllability Analysis}{8}{section.3}% 
 \contentsline {subsection}{\numberline {3.1}Minimal Realisation of the System}{8}{subsection.3.1}% 
 \contentsline {subsection}{\numberline {3.2}Functional Controllability}{8}{subsection.3.2}% 
-\contentsline {subsection}{\numberline {3.3}System Poles}{9}{subsection.3.3}% 
-\contentsline {subsubsection}{\numberline {3.3.1}Calculating the System Poles}{9}{subsubsection.3.3.1}% 
+\contentsline {subsection}{\numberline {3.3}System Poles}{10}{subsection.3.3}% 
+\contentsline {subsubsection}{\numberline {3.3.1}Calculating the System Poles}{10}{subsubsection.3.3.1}% 
 \contentsline {subsubsection}{\numberline {3.3.2}Calculating the System Pole Directions}{10}{subsubsection.3.3.2}% 
 \contentsline {subsubsection}{\numberline {3.3.3}Discussion of System Poles}{11}{subsubsection.3.3.3}% 
 \contentsline {subsection}{\numberline {3.4}System Zeros}{12}{subsection.3.4}% 
 \contentsline {subsubsection}{\numberline {3.4.1}Calculating the System Zeros}{12}{subsubsection.3.4.1}% 
 \contentsline {subsubsection}{\numberline {3.4.2}Discussion of System Zeros}{12}{subsubsection.3.4.2}% 
 \contentsline {subsection}{\numberline {3.5}RGA Values of the System}{13}{subsection.3.5}% 
-\contentsline {subsection}{\numberline {3.6}Singular Values of the System}{14}{subsection.3.6}% 
-\contentsline {subsubsection}{\numberline {3.6.1}The Minimum Singular Value and Set-point Tracking}{14}{subsubsection.3.6.1}% 
-\contentsline {subsubsection}{\numberline {3.6.2}Singular Value Directions}{16}{subsubsection.3.6.2}% 
+\contentsline {subsection}{\numberline {3.6}Singular Values of the System}{15}{subsection.3.6}% 
+\contentsline {subsubsection}{\numberline {3.6.1}The Minimum Singular Value and Set-point Tracking}{15}{subsubsection.3.6.1}% 
+\contentsline {subsubsection}{\numberline {3.6.2}Singular Value Directions}{17}{subsubsection.3.6.2}% 
 \contentsline {subsection}{\numberline {3.7}System Bandwidth}{18}{subsection.3.7}% 
-\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{20}{subsection.3.8}% 
+\contentsline {subsection}{\numberline {3.8}Disturbance Rejection}{21}{subsection.3.8}% 
 \contentsline {subsection}{\numberline {3.9}Disturbances and Input Saturation}{23}{subsection.3.9}% 
 \contentsline {subsubsection}{\numberline {3.9.1}Analysis for Perfect Control}{23}{subsubsection.3.9.1}% 
 \contentsline {subsubsection}{\numberline {3.9.2}Analysis for Acceptable Control}{24}{subsubsection.3.9.2}% 
-\contentsline {section}{\numberline {4}Changing the System Bounds}{27}{section.4}% 
-\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{27}{subsection.4.1}% 
-\contentsline {section}{\numberline {5}Uncertainty and Robustness}{29}{section.5}% 
-\contentsline {subsection}{\numberline {5.1}Choosing the Uncertainty Weight Form}{30}{subsection.5.1}% 
-\contentsline {subsection}{\numberline {5.2}Parametric Uncertainty}{32}{subsection.5.2}% 
-\contentsline {section}{\numberline {6}Performance Measurement}{35}{section.6}% 
-\contentsline {section}{\numberline {A}Appendix}{38}{appendix.A}% 
+\contentsline {section}{\numberline {4}Changing the System Bounds}{28}{section.4}% 
+\contentsline {subsection}{\numberline {4.1}Disturbance Rejection and Input Saturation}{28}{subsection.4.1}% 
+\contentsline {section}{\numberline {5}Uncertainty and Robustness}{31}{section.5}% 
+\contentsline {subsection}{\numberline {5.1}Choosing the Uncertainty Weight Form}{31}{subsection.5.1}% 
+\contentsline {subsection}{\numberline {5.2}Parametric Uncertainty}{33}{subsection.5.2}% 
+\contentsline {section}{\numberline {6}Performance Measurement}{37}{section.6}% 
+\contentsline {section}{\numberline {7}Conclusions}{38}{section.7}% 
+\contentsline {section}{\numberline {A}Appendix}{40}{appendix.A}% 
